@@ -24,9 +24,6 @@ body {
 }
 
 .navegacion {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     background: #111;
     content: "";
@@ -35,12 +32,12 @@ body {
     z-index: 999;
 }
 
-.navegacion a {
+.navegacion a { /* Cuidador, esto se rompe cuando cambiamos la clase superior! */
     border: none;
     text-decoration: none;
 }
 
-.navegacion li {
+.navegacion li { /* Cuidador, esto se rompe cuando cambiamos la clase superior! */
     list-style-type: none;
 }
 

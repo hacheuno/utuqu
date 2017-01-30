@@ -14,7 +14,7 @@
 
   <body>
 
-    <nav class="navegacion">
+    <nav class="navegacion-demo">
       <a class="navegacion_asistida enfocable" href="#contenido">Saltar navegación</a>
 
       <a class="navegacion_nombre" href="#0">UTUQU</a>
@@ -54,10 +54,11 @@
 
       <section class="bloque">
         <header class="peque-12">
-          <h3>CUADRÍCULA</h3>
-          <hr>
+          <h2>BASE</h2>
         </header>
         <div class="peque-12">
+          <h3>CUADRÍCULA</h3>
+          <hr>
           <p>
             La cuadrícula de Utuqu está construida en base a 12 columnas que ocupan espacios equivalentes en un lienzo de 1200px de anchura y es <i>mobile-first</i>, lo que quiere decir que los estilos se heredan "hacia arriba".
           </p>
@@ -68,6 +69,7 @@
             Para conseguir columnas sin espacio de separación entre ellas, agrega <code>.sin-medianil</code> al elemento <code>.bloque</code>.
           </p>
         </div>
+
         <div class="peque-12 medio-1"><span class="muestra-columna">.medio-1</span></div>
         <div class="peque-12 medio-1"><span class="muestra-columna">.medio-1</span></div>
         <div class="peque-12 medio-1"><span class="muestra-columna">.medio-1</span></div>
@@ -102,6 +104,7 @@
         <div class="peque-12 medio-5"><span class="muestra-columna">.medio-5</span></div>
         <div class="peque-12 medio-8"><span class="muestra-columna">.medio-8</span></div>
         <div class="peque-12 medio-4"><span class="muestra-columna">.medio-4</span></div>
+
         <!-- Código -->
         <div class="peque-12">
           <h5>Muestra</h5>
@@ -131,6 +134,7 @@
             En ocasiones podemos necesitar que nuestra estructura carezca de espacios intermedios, para eso tenemos la clase <code>.sin-medianil</code> que se debe aplicar como complemento de <code>.bloque</code>.
           </p>
         </div>
+
         <section class="bloque sin-medianil">
           <div class="peque-3"><span class="muestra-columna">.peque-3</span></div>
           <div class="peque-3"><span class="muestra-columna">.peque-3</span></div>
@@ -144,6 +148,7 @@
             Para crear rejillas automáticas de anchuras equivalentes podemos usar la clase <code>.bloque-auto</code> dentro de un elemento <code>.bloque</code>. Esta rejilla escala desde cuatro columnas en pantallas grandes, a dos columnas en las pantallas más pequeñas.
           </p>
         </div>
+
         <section class="bloque">
           <div class="bloque-auto"><img src="http://placehold.it/350x350" alt="Bloque Automático"></div>
           <div class="bloque-auto"><img src="http://placehold.it/350x350" alt="Bloque Automático"></div>
@@ -154,6 +159,7 @@
           <div class="bloque-auto"><img src="http://placehold.it/350x350" alt="Bloque Automático"></div>
           <div class="bloque-auto"><img src="http://placehold.it/350x350" alt="Bloque Automático"></div>
         </section>
+
         <!-- Código -->
         <div class="peque-12">
           <h5>Muestra</h5>
@@ -178,6 +184,7 @@
             Para conseguir columnas o elementos de igual altura añade la clase <code>.alturas-iguales</code> al elemento contenedor (.bloque en este caso) e <code>.iguala</code> a los descendientes directos de este.
           </p>
         </div>
+
         <section class="bloque alturas-iguales">
           <div class="peque-12 medio-4 borde--derecha-1 iguala">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -189,6 +196,7 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           </div>
         </section>
+
         <!-- Código -->
         <div class="peque-12">
           <h5>Muestra</h5>
@@ -213,6 +221,7 @@
           <p>
             Para crear una columna centrada usaremos <code>.columna-centrada</code> junto a una clase <code>.medio-*</code> (o equivalente) menor de 12.
           </p>
+
           <section class="bloque fondo-plata">
             <div class="medio-3 columna-centrada">
               <span class="muestra-columna">.medio-3 .columna-centrada</span>
@@ -224,6 +233,7 @@
         <div class="peque-12">
           <h4>Lista de clases</h4>
           <p>A continuación se detallan todas las clases que tienen relación con la cuadrícula.</p>
+
           <table class="tabla-destacada tabla-bordeada tabla-espaciada">
             <thead>
               <th>Clase</th>
@@ -288,6 +298,7 @@
           </p>
           <p><a href="#0">Lista completa de utilidades de color</a></p>
         </div>
+
         <div class="peque-12 medio-2"><div class="muestra-color fondo-negro"></div></div>
         <div class="peque-12 medio-2"><div class="muestra-color fondo-gris--oscuro"></div></div>
         <div class="peque-12 medio-2"><div class="muestra-color fondo-gris--medio"></div></div>
@@ -322,6 +333,7 @@
           </p>
           <p><a href="#0">Lista completa de utilidades de texto</a></p>
         </div>
+
         <div class="peque-12 medio-6">
           <h1>Titular h1</h1>
           <h2>Titular h2</h2>
@@ -361,7 +373,7 @@
             </ol>
           </div>
           <div class="medio-12">
-            <h4>Lista horizontal</h4>
+            <h4>UL/OL .lista-horizontal</h4>
             <ul class="lista-horizontal">
               <li>Lorem ipsum</li>
               <li>Lorem ipsum</li>
@@ -369,6 +381,7 @@
             </ul>
           </div>
         </div>
+
         <div class="peque-12 medio-6">
           <p class="texto-destacado">Lorem ipsum dolor sit amet, consectetur adipiscing elit aliqua.</p>
           <p>Lorem ipsum dolor sit amet, consectetur <kbd>CTRL+ALT</kbd> elit, sed do <code>.clase</code> tempor incididunt ut labore et dolore magna aliqua. Varius<sup>1</sup> quam quisque<sub>2</sub> id diam. Pellentesque massa <small>placerat duis ultricies</small> lacus. Vitae tempus quam pellentesque nec nam aliquam sem et tortor. Diam volutpat commodo sed egestas. Dictum non consectetur a erat nam.</p>
@@ -527,232 +540,6 @@
           </code></pre>
         </div>
       </section>
-
-      <!-- SOLAPAS -->
-
-      <section class="bloque">
-        <header class="peque-12">
-          <h3>SOLAPAS</h3>
-          <hr>
-        </header>
-        <div class="peque-12">
-          <p>
-            Este componente genera un grupo de solapas responsivas únicamente con <kbd>CSS</kbd>. En dispositivos con pantallas estrechas se comporta como un acordeón. Basta con añadir el marcaje correcto y definir tantas solapas como se desee.
-          </p>
-        </div>
-        <div class="peque-12">
-          <div class="solapas">
-           <input class="solapa_disparador" type="radio" id="solapa_uno" name="solapas" checked>
-           <label class="solapa_etiqueta" for="solapa_uno">Uno</label>
-           <div class="solapa_contenido">
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-           </div>
-
-           <input class="solapa_disparador" type="radio" id="solapa_dos" name="solapas">
-           <label class="solapa_etiqueta" for="solapa_dos">Dos</label>
-           <div class="solapa_contenido">
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-           </div>
-
-           <input class="solapa_disparador" type="radio" id="solapa_tres" name="solapas">
-           <label class="solapa_etiqueta" for="solapa_tres">Tres</label>
-           <div class="solapa_contenido">
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-           </div>
-
-           <input class="solapa_disparador" type="radio" id="solapa_cuatro" name="solapas">
-           <label class="solapa_etiqueta" for="solapa_cuatro">Cuatro</label>
-           <div class="solapa_contenido">
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-           </div>
-
-           <input class="solapa_disparador" type="radio" id="solapa_cinco" name="solapas">
-           <label class="solapa_etiqueta" for="solapa_cinco">Cinco</label>
-           <div class="solapa_contenido">
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-           </div>
-
-           <input class="solapa_disparador" type="radio" id="solapa_seis" name="solapas">
-           <label class="solapa_etiqueta" for="solapa_seis">Seis</label>
-           <div class="solapa_contenido">
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-           </div>
-          </div>
-        </div>
-        <!-- Código -->
-        <div class="peque-12">
-          <h5>Muestra</h5>
-          <pre><code>
-&lt;div class=&quot;solapas&quot;&gt;
- &lt;input class=&quot;solapa_input&quot; type=&quot;radio&quot; id=&quot;solapa_uno&quot; name=&quot;solapas&quot; checked&gt;
- &lt;label class=&quot;solapa_etiqueta&quot; for=&quot;solapa_uno&quot;&gt;Uno&lt;/label&gt;
- &lt;div class=&quot;solapa_contenido&quot;&gt;
-   Contenido...
- &lt;/div&gt;
-
- &lt;input class=&quot;solapa_input&quot; type=&quot;radio&quot; id=&quot;solapa_dos&quot; name=&quot;solapas&quot;&gt;
- &lt;label class=&quot;solapa_etiqueta&quot; for=&quot;solapa_dos&quot;&gt;Dos&lt;/label&gt;
- &lt;div class=&quot;solapa_contenido&quot;&gt;
-   Contenido...
- &lt;/div&gt;
-
- &lt;input class=&quot;solapa_input&quot; type=&quot;radio&quot; id=&quot;solapa_tres&quot; name=&quot;solapas&quot;&gt;
- &lt;label class=&quot;solapa_etiqueta&quot; for=&quot;solapa_tres&quot;&gt;Tres&lt;/label&gt;
- &lt;div class=&quot;solapa_contenido&quot;&gt;
-   Contenido...
- &lt;/div&gt;
-&lt;/div&gt;
-          </code></pre>
-        </div>
-      </section>
-
-      <!-- ACORDEÓN -->
-
-      <section class="bloque">
-        <header class="peque-12">
-          <h3>ACORDEÓN</h3>
-          <hr>
-        </header>
-        <div class="peque-12">
-          <p>
-            El acordeón de Utuqu está implementado mediante la etiqueta nativa <code>&lt;details&gt;</code> a la que tan solo se le han añadido algunos estilos, y su proposito es proporcionar una manera de mostrar contenido secundario. Para marcar un elemento como abierto solo debemos añadir el atributo <code>open</code>.
-          </p>
-          <p>NOTA: <code>&lt;details&gt;</code> está soportado en todos los navegadores excepto (¡sorpresa!) en IE y Edge. Datos de soporte actualizados en <a href="http://caniuse.com/#feat=details">caniuse.com</a>.</p>
-        </div>
-        <div class="peque-12">
-          <details open>
-             <summary>Título</summary>
-             <p>
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-             </p>
-          </details>
-          <details>
-             <summary>Título</summary>
-             <p>
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-             </p>
-          </details>
-          <details>
-             <summary>Título</summary>
-             <p>
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-             </p>
-          </details>
-        </div>
-        <!-- Código -->
-        <div class="peque-12">
-          <h5>Muestra</h5>
-          <pre><code>
-  &lt;details open&gt;
-     &lt;summary&gt;T&iacute;tulo&lt;/summary&gt;
-     &lt;p&gt;
-       Contenido...
-     &lt;/p&gt;
-  &lt;/details&gt;
-          </code></pre>
-        </div>
-      </section>
-
-
-      <!-- DESPLEGABLE -->
-
-      <section class="bloque">
-        <header class="peque-12">
-          <h3>DESPLEGABLE</h3>
-          <hr>
-        </header>
-        <div class="peque-12">
-          <p>
-            Este componente genera un menú desplegable básico y puede ser lanzado con un <code>a</code> y con elementos de formulario como <code>input</code> y <code>button</code>. Como se utiliza la propiedad <i>:focus</i> para emular el estado, para usarlo en otro tipo de elementos hay que añadir <code>tabindex="-1"</code> al elemento que aloja la clase <code>.desplegable_abre</code>. La clase <code>.boton</code> solo se usa con fines estilísticos.
-          </p>
-        </div>
-        <div class="peque-12">
-          <aside class="desplegable">
-            <button class="boton desplegable_abre">DESPLIÉGAME</button>
-            <ul class="desplegable_contenido">
-              <li class="desplegable_item"><a href="#0">Item</a></li>
-              <li class="desplegable_item"><a href="#0">Item</a></li>
-              <li class="desplegable_item"><a href="#0">Item</a></li>
-            </ul>
-          </aside>
-        </div>
-        <!-- Código -->
-        <div class="peque-12">
-          <h5>Muestra</h5>
-          <pre><code>
-  &lt;aside class=&quot;desplegable&quot;&gt;
-    &lt;a href=&quot;#0&quot; class=&quot;boton desplegable_abre&quot;&gt;CON DESPLEGABLE&lt;/a&gt;
-    &lt;ul class=&quot;desplegable_contenido&quot;&gt;
-      &lt;li class=&quot;desplegable_item&quot;&gt;&lt;a href=&quot;#0&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
-      &lt;li class=&quot;desplegable_item&quot;&gt;&lt;a href=&quot;#0&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
-      &lt;li class=&quot;desplegable_item&quot;&gt;&lt;a href=&quot;#0&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/aside&gt;
-
-  &lt;aside class=&quot;desplegable&quot;&gt;
-    &lt;button href=&quot;#0&quot; class=&quot;boton desplegable_abre&quot;&gt;CON DESPLEGABLE&lt;/button&gt;
-    &lt;ul class=&quot;desplegable_contenido&quot;&gt;
-      &lt;li class=&quot;desplegable_item&quot;&gt;&lt;a href=&quot;#0&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
-      &lt;li class=&quot;desplegable_item&quot;&gt;&lt;a href=&quot;#0&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
-      &lt;li class=&quot;desplegable_item&quot;&gt;&lt;a href=&quot;#0&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/aside&gt;
-          </code></pre>
-        </div>
-      </section>
-
-
-      <!-- EMERGENTE -->
-
-      <section class="bloque">
-        <header class="peque-12">
-          <h3>EMERGENTE</h3>
-          <hr>
-        </header>
-
-        <div class="peque-12">
-          <p>
-            El componente emergente sirve para mostrar contenido o acciones secundarias. Consta de dos componentes; el disparador, que puede ser cualquier elemento que soporte la seudo-propiedad <i>:focus</i> o que tenga el atributo <i>tabindex</i>, y el contenido del elemento emergente.
-          </p>
-        </div>
-
-        <div class="peque-12">
-          <button class="boton emergente_abre">ELEMENTO EMERGENTE</button>
-          <section class="emergente_contenido">
-            <header>
-              <span class="emergente_cierra">&times;</span>
-              <h3>Titulo del emergente</h3>
-            </header>
-            <p class="texto-destacado">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </section>
-        </div>
-
-        <!-- Código -->
-        <div class="peque-12">
-          <h5>Muestra</h5>
-          <pre><code>
-  &lt;button class=&quot;boton emergente_abre&quot;&gt;ELEMENTO EMERGENTE&lt;/button&gt;
-  &lt;section class=&quot;emergente_contenido&quot;&gt;
-    &lt;header&gt;
-      &lt;span class=&quot;emergente_cierra&quot;&gt;&amp;times;&lt;/span&gt;
-      &lt;h3&gt;T&iacute;tulo del emergente&lt;/h3&gt;
-    &lt;/header&gt;
-    &lt;p&gt;
-      Aqui va el contenido
-    &lt;/p&gt;
-  &lt;/section&gt;
-          </code></pre>
-        </div>
-      </section>
-
 
       <!-- FORMULARIOS -->
 
@@ -1035,6 +822,302 @@
              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
            </tr>
           </table>
+        </div>
+      </section>
+
+
+      <!-- NAVEGACIÓN -->
+
+      <section class="bloque">
+        <header class="peque-12">
+          <h2>COMPONENTES</h2>
+        </header>
+
+        <div class="peque-12">
+          <h3>NAVEGACIÓN</h3>
+          <hr>
+          <p>
+            Barra de navegación responsiva creada con solo con <kbd>CSS</kbd>. Contiene sub-menus desplegables y panel lateral en pantallas pequeñas. Crea items de menu dandole a elementos de lista la clase <code>.nevegacion_item</code> dentro de una lista desordenada con la clase <code>.nevegacion_menu</code>, y añádele <code>.navegacion_derecha</code> para que flote a la derecha, si no flotará a la izquierda por defecto.
+          </p>
+          <p>
+            Para crear un menú desplegable, dale la clase <code>.navegacion_tiene-desplegable</code> al ancla y añade una lista desordenada con la clase <code>.navegacion_desplegable</code> envolviendo items de menú.
+          </p>
+        </div>
+
+        <div class="peque-12">
+          <nav class="navegacion">
+            <a class="navegacion_asistida enfocable" href="#contenido">Saltar navegación</a>
+            <a class="navegacion_nombre" href="#0">NOMBRE</a>
+            <input class="navegacion_conmutador" type="checkbox" id="navegacion_conmutador" />
+            <label for="navegacion_conmutador">+</label>
+            <ul class="navegacion_menu">
+              <li class="navegacion_item navegacion_item--activo"><a href="#0">Inicio</a></li>
+              <li class="navegacion_item">
+                <a class="navegacion_tiene-desplegable" href="#0">Desplegable</a>
+                <ul class="navegacion_desplegable">
+                  <li class="navegacion_item"><a href="#0">Uno</a></li>
+                  <li class="navegacion_item"><a href="#0">Dos</a></li>
+                  <li class="navegacion_item"><a href="#0">Tres</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="navegacion_menu navegacion_derecha">
+              <li class="navegacion_item"><a href="#0">SALIR</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Código -->
+        <div class="peque-12">
+          <h5>Muestra</h5>
+          <pre><code>
+&lt;nav class=&quot;navegacion&quot;&gt;
+  &lt;a class=&quot;navegacion_asistida enfocable&quot; href=&quot;#contenido&quot;&gt;Saltar navegaci&oacute;n&lt;/a&gt;
+  &lt;a class=&quot;navegacion_nombre&quot; href=&quot;#0&quot;&gt;NOMBRE&lt;/a&gt;
+  &lt;input class=&quot;navegacion_conmutador&quot; type=&quot;checkbox&quot; id=&quot;navegacion_conmutador&quot; /&gt;
+  &lt;label for=&quot;navegacion_conmutador&quot;&gt;+&lt;/label&gt;
+  &lt;ul class=&quot;navegacion_menu&quot;&gt;
+    &lt;li class=&quot;navegacion_item navegacion_item--activo&quot;&gt;&lt;a href=&quot;#0&quot;&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;navegacion_item&quot;&gt;
+      &lt;a class=&quot;navegacion_tiene-desplegable&quot; href=&quot;#0&quot;&gt;Desplegable&lt;/a&gt;
+      &lt;ul class=&quot;navegacion_desplegable&quot;&gt;
+        &lt;li class=&quot;navegacion_item&quot;&gt;&lt;a href=&quot;#0&quot;&gt;Uno&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;navegacion_item&quot;&gt;&lt;a href=&quot;#0&quot;&gt;Dos&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;navegacion_item&quot;&gt;&lt;a href=&quot;#0&quot;&gt;Tres&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;ul class=&quot;navegacion_menu navegacion_derecha&quot;&gt;
+    &lt;li class=&quot;navegacion_item&quot;&gt;&lt;a href=&quot;#0&quot;&gt;SALIR&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+          </code></pre>
+        </div>
+      </section>
+
+
+      <!-- SOLAPAS -->
+
+      <section class="bloque">
+        <div class="peque-12">
+          <h3>SOLAPAS</h3>
+          <hr>
+          <p>
+            Este componente genera un grupo de solapas responsivas únicamente con <kbd>CSS</kbd>. En dispositivos con pantallas estrechas se comporta como un acordeón. Basta con añadir el marcaje correcto y definir tantas solapas como se desee.
+          </p>
+        </div>
+
+        <div class="peque-12">
+          <div class="solapas">
+           <input class="solapa_disparador" type="radio" id="solapa_uno" name="solapas" checked>
+           <label class="solapa_etiqueta" for="solapa_uno">Uno</label>
+           <div class="solapa_contenido">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           </div>
+
+           <input class="solapa_disparador" type="radio" id="solapa_dos" name="solapas">
+           <label class="solapa_etiqueta" for="solapa_dos">Dos</label>
+           <div class="solapa_contenido">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           </div>
+
+           <input class="solapa_disparador" type="radio" id="solapa_tres" name="solapas">
+           <label class="solapa_etiqueta" for="solapa_tres">Tres</label>
+           <div class="solapa_contenido">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           </div>
+
+           <input class="solapa_disparador" type="radio" id="solapa_cuatro" name="solapas">
+           <label class="solapa_etiqueta" for="solapa_cuatro">Cuatro</label>
+           <div class="solapa_contenido">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           </div>
+
+           <input class="solapa_disparador" type="radio" id="solapa_cinco" name="solapas">
+           <label class="solapa_etiqueta" for="solapa_cinco">Cinco</label>
+           <div class="solapa_contenido">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           </div>
+
+           <input class="solapa_disparador" type="radio" id="solapa_seis" name="solapas">
+           <label class="solapa_etiqueta" for="solapa_seis">Seis</label>
+           <div class="solapa_contenido">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           </div>
+          </div>
+        </div>
+
+        <!-- Código -->
+        <div class="peque-12">
+          <h5>Muestra</h5>
+          <pre><code>
+&lt;div class=&quot;solapas&quot;&gt;
+ &lt;input class=&quot;solapa_etiqueta&quot; type=&quot;radio&quot; id=&quot;solapa_uno&quot; name=&quot;solapas&quot; checked&gt;
+ &lt;label class=&quot;solapa_etiqueta&quot; for=&quot;solapa_uno&quot;&gt;Uno&lt;/label&gt;
+ &lt;div class=&quot;solapa_contenido&quot;&gt;
+   Contenido...
+ &lt;/div&gt;
+
+ &lt;input class=&quot;solapa_etiqueta&quot; type=&quot;radio&quot; id=&quot;solapa_dos&quot; name=&quot;solapas&quot;&gt;
+ &lt;label class=&quot;solapa_etiqueta&quot; for=&quot;solapa_dos&quot;&gt;Dos&lt;/label&gt;
+ &lt;div class=&quot;solapa_contenido&quot;&gt;
+   Contenido...
+ &lt;/div&gt;
+
+ &lt;input class=&quot;solapa_etiqueta&quot; type=&quot;radio&quot; id=&quot;solapa_tres&quot; name=&quot;solapas&quot;&gt;
+ &lt;label class=&quot;solapa_etiqueta&quot; for=&quot;solapa_tres&quot;&gt;Tres&lt;/label&gt;
+ &lt;div class=&quot;solapa_contenido&quot;&gt;
+   Contenido...
+ &lt;/div&gt;
+&lt;/div&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <!-- ACORDEÓN -->
+
+      <section class="bloque">
+        <header class="peque-12">
+          <h3>ACORDEÓN</h3>
+          <hr>
+        </header>
+        <div class="peque-12">
+          <p>
+            El acordeón de Utuqu está implementado mediante la etiqueta nativa <code>&lt;details&gt;</code> a la que tan solo se le han añadido algunos estilos, y su proposito es proporcionar una manera de mostrar contenido secundario. Para marcar un elemento como abierto solo debemos añadir el atributo <code>open</code>.
+          </p>
+          <p>NOTA: <code>&lt;details&gt;</code> está soportado en todos los navegadores excepto (¡sorpresa!) en IE y Edge. Datos de soporte actualizados en <a href="http://caniuse.com/#feat=details">caniuse.com</a>.</p>
+        </div>
+        <div class="peque-12">
+          <details open>
+             <summary>Título</summary>
+             <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+             </p>
+          </details>
+          <details>
+             <summary>Título</summary>
+             <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+             </p>
+          </details>
+          <details>
+             <summary>Título</summary>
+             <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+             </p>
+          </details>
+        </div>
+        <!-- Código -->
+        <div class="peque-12">
+          <h5>Muestra</h5>
+          <pre><code>
+  &lt;details open&gt;
+     &lt;summary&gt;T&iacute;tulo&lt;/summary&gt;
+     &lt;p&gt;
+       Contenido...
+     &lt;/p&gt;
+  &lt;/details&gt;
+          </code></pre>
+        </div>
+      </section>
+
+
+      <!-- DESPLEGABLE -->
+
+      <section class="bloque">
+        <header class="peque-12">
+          <h3>DESPLEGABLE</h3>
+          <hr>
+        </header>
+        <div class="peque-12">
+          <p>
+            Este componente genera un menú desplegable básico y puede ser lanzado con un <code>a</code> y con elementos de formulario como <code>input</code> y <code>button</code>. Como se utiliza la propiedad <i>:focus</i> para emular el estado, para usarlo en otro tipo de elementos hay que añadir <code>tabindex="-1"</code> al elemento que aloja la clase <code>.desplegable_abre</code>. La clase <code>.boton</code> solo se usa con fines estilísticos.
+          </p>
+        </div>
+        <div class="peque-12">
+          <aside class="desplegable">
+            <button class="boton desplegable_abre">DESPLIÉGAME</button>
+            <ul class="desplegable_contenido">
+              <li class="desplegable_item"><a href="#0">Item</a></li>
+              <li class="desplegable_item"><a href="#0">Item</a></li>
+              <li class="desplegable_item"><a href="#0">Item</a></li>
+            </ul>
+          </aside>
+        </div>
+        <!-- Código -->
+        <div class="peque-12">
+          <h5>Muestra</h5>
+          <pre><code>
+  &lt;aside class=&quot;desplegable&quot;&gt;
+    &lt;a href=&quot;#0&quot; class=&quot;boton desplegable_abre&quot;&gt;CON DESPLEGABLE&lt;/a&gt;
+    &lt;ul class=&quot;desplegable_contenido&quot;&gt;
+      &lt;li class=&quot;desplegable_item&quot;&gt;&lt;a href=&quot;#0&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;desplegable_item&quot;&gt;&lt;a href=&quot;#0&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;desplegable_item&quot;&gt;&lt;a href=&quot;#0&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/aside&gt;
+
+  &lt;aside class=&quot;desplegable&quot;&gt;
+    &lt;button href=&quot;#0&quot; class=&quot;boton desplegable_abre&quot;&gt;CON DESPLEGABLE&lt;/button&gt;
+    &lt;ul class=&quot;desplegable_contenido&quot;&gt;
+      &lt;li class=&quot;desplegable_item&quot;&gt;&lt;a href=&quot;#0&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;desplegable_item&quot;&gt;&lt;a href=&quot;#0&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;desplegable_item&quot;&gt;&lt;a href=&quot;#0&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/aside&gt;
+          </code></pre>
+        </div>
+      </section>
+
+
+      <!-- EMERGENTE -->
+
+      <section class="bloque">
+        <header class="peque-12">
+          <h3>EMERGENTE</h3>
+          <hr>
+        </header>
+
+        <div class="peque-12">
+          <p>
+            El componente emergente sirve para mostrar contenido o acciones secundarias. Consta de dos componentes; el disparador, que puede ser cualquier elemento que soporte la seudo-propiedad <i>:focus</i> o que tenga el atributo <i>tabindex</i>, y el contenido del elemento emergente.
+          </p>
+        </div>
+
+        <div class="peque-12">
+          <button class="boton emergente_abre">ELEMENTO EMERGENTE</button>
+          <section class="emergente_contenido">
+            <header>
+              <span class="emergente_cierra">&times;</span>
+              <h3>Titulo del emergente</h3>
+            </header>
+            <p class="texto-destacado">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </section>
+        </div>
+
+        <!-- Código -->
+        <div class="peque-12">
+          <h5>Muestra</h5>
+          <pre><code>
+  &lt;button class=&quot;boton emergente_abre&quot;&gt;ELEMENTO EMERGENTE&lt;/button&gt;
+  &lt;section class=&quot;emergente_contenido&quot;&gt;
+    &lt;header&gt;
+      &lt;span class=&quot;emergente_cierra&quot;&gt;&amp;times;&lt;/span&gt;
+      &lt;h3&gt;T&iacute;tulo del emergente&lt;/h3&gt;
+    &lt;/header&gt;
+    &lt;p&gt;
+      Aqui va el contenido
+    &lt;/p&gt;
+  &lt;/section&gt;
+          </code></pre>
         </div>
       </section>
     </div>

@@ -30,7 +30,7 @@
 @import "componentes/desplegable.css";
 @import "componentes/emergente.css";
 @import "componentes/acordeon.css";
-@import "componentes/solapas.css"; 
+@import "componentes/solapas.css";
 
 /*@import "componentes/paneles.css"; Pendiente de implementar */
 /*@import "componentes/carrusel.css"; Pendiente de implementar */
@@ -110,6 +110,28 @@ section section {
 section section {
   border: none;
   box-shadow: none;
+}
+
+.navegacion-demo {
+    position: fixed;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #111;
+    content: "";
+    display: table;
+    clear: both;
+    z-index: 999;
+}
+
+.navegacion-demo a {
+border: none;
+text-decoration: none;
+}
+
+.navegacion-demo li {
+list-style-type: none;
 }
 
 .muestra-columna {
