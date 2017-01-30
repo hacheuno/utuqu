@@ -1,0 +1,63 @@
+/*
+*   UTUQU - SOLAPAS
+*************************************************/
+
+/*
+https://kyusuf.com/post/completely-css-tabs
+*/
+
+.solapas {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.solapa_disparador {
+	position: absolute;
+	opacity: 0;
+}
+
+.solapa_etiqueta {
+	width: 100%;
+	padding: 1rem 2rem;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 18px;
+	color: #333;
+	transition: background 0.1s, color 0.1s;
+}
+
+.solapa_etiqueta:hover {
+	color: #777;
+}
+
+.solapa_disparador:focus + .solapa_etiqueta {
+	z-index: 1;
+}
+
+.solapa_disparador:checked + .solapa_etiqueta {
+	background: #FFF;
+  border-bottom: 5px solid #333
+}
+
+@media (min-width: 600px) {
+	.solapa_etiqueta {
+		width: auto;
+	}
+}
+
+.solapa_contenido {
+	display: none;
+	padding: 2rem;
+	background: #FFF;
+  border-top: 1px solid #DDD;
+}
+
+@media (min-width: 600px) {
+	.solapa_contenido {
+		order: 99;
+	}
+}
+
+.solapa_disparador:checked + .solapa_etiqueta + .solapa_contenido {
+	display: block;
+}

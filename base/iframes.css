@@ -1,0 +1,31 @@
+/*
+*   UTUQU - IFRAMES
+*************************************************/
+
+.iframe
+{
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+
+.iframe iframe
+{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 16x9 Aspect Ratio */
+.ratio--16-9
+{
+  padding-bottom: 56.25%;
+}
+
+/* 4x3 Aspect Ratio */
+.ratio--4-3
+{
+  padding-bottom: 70%;
+}

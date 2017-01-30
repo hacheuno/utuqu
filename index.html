@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UTUQU 0.2</title>
+    <!-- NOTE:
+        * Integra las fuentes, puto vago...
+    -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,400i,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="aplicacion.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navegacion">
+      <a class="navegacion_asistida enfocable" href="#contenido">Saltar navegación</a>
+
+      <a class="navegacion_nombre" href="#0">UTUQU</a>
+
+      <input class="navegacion_conmutador" type="checkbox" id="navegacion_conmutador" />
+      <label for="navegacion_conmutador">+</label>
+
+      <ul class="navegacion_menu navegacion_derecha">
+        <li class="navegacion_item navegacion_item--activo"><a href="#0">Inicio</a></li>
+        <li class="navegacion_item"><a href="#0">Base</a></li>
+        <li class="navegacion_item">
+          <a class="navegacion_tiene-desplegable" href="#0">Componentes</a>
+          <ul class="navegacion_desplegable">
+            <li class="navegacion_item"><a href="#0">Navegación</a></li>
+            <li class="navegacion_item"><a href="#0">Desplegable</a></li>
+            <li class="navegacion_item"><a href="#0">Emergente</a></li>
+          </ul>
+        </li>
+        <li class="navegacion_item"><a href="#0">Módulos</a></li>
+        <li class="navegacion_item"><a href="#0">Extensiones</a></li>
+
+        <li class="navegacion_extra navegacion_login">
+          <a class="navegacion_tiene-desplegable" href="#0"><i class="material-icons">&#xE853;</i> usuaria@utuqu.com</a>
+          <ul class="navegacion_desplegable">
+            <li class="navegacion_item"><a href="#0">Cuenta</a></li>
+            <li class="navegacion_item"><a href="#0">Ajustes</a></li>
+            <li class="navegacion_item"><a href="#0">Privacidad</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="navegacion_espaciador"><!-- Solo cuando la navegacion es fixed --></div>
+
+    <div id="contenido" class="sin-foco" tabindex="-1">
+
+      <!-- CUADRÍCULA -->
+
+      <section class="bloque">
+        <header class="peque-12">
+          <h3>CUADRÍCULA</h3>
+          <hr>
+        </header>
+        <div class="peque-12">
+          <p>
+            La cuadrícula de Utuqu está construida en base a 12 columnas que ocupan espacios equivalentes en un lienzo de 1200px de anchura y es <i>mobile-first</i>, lo que quiere decir que los estilos se heredan "hacia arriba".
+          </p>
+          <p>
+            Usa la clase <code>.bloque</code> para crear una division horizontal y anida tantas <code>.peque-*</code> como columnas necesites. Agrega <code>.medio-*</code> o <code>.grande-*</code> para definir el tamaño en pantallas de mayores dimensiones.
+          </p>
+          <p>
+            Para conseguir columnas sin espacio de separación entre ellas, agrega <code>.sin-medianil</code> al elemento <code>.bloque</code>.
+          </p>
+        </div>
+        <div class="peque-12 medio-1"><span class="muestra-columna">.medio-1</span></div>
+        <div class="peque-12 medio-1"><span class="muestra-columna">.medio-1</span></div>
+        <div class="peque-12 medio-1"><span class="muestra-columna">.medio-1</span></div>
+        <div class="peque-12 medio-1"><span class="muestra-columna">.medio-1</span></div>
+        <div class="peque-12 medio-1"><span class="muestra-columna">.medio-1</span></div>
+        <div class="peque-12 medio-1"><span class="muestra-columna">.medio-1</span></div>
+        <div class="peque-12 medio-1"><span class="muestra-columna">.medio-1</span></div>
+        <div class="peque-12 medio-1"><span class="muestra-columna">.medio-1</span></div>
+        <div class="peque-12 medio-1"><span class="muestra-columna">.medio-1</span></div>
+        <div class="peque-12 medio-1"><span class="muestra-columna">.medio-1</span></div>
+        <div class="peque-12 medio-1"><span class="muestra-columna">.medio-1</span></div>
+        <div class="peque-12 medio-1"><span class="muestra-columna">.medio-1</span></div>
+        <div class="peque-12 medio-2"><span class="muestra-columna">.medio-2</span></div>
+        <div class="peque-12 medio-2"><span class="muestra-columna">.medio-2</span></div>
+        <div class="peque-12 medio-2"><span class="muestra-columna">.medio-2</span></div>
+        <div class="peque-12 medio-2"><span class="muestra-columna">.medio-2</span></div>
+        <div class="peque-12 medio-2"><span class="muestra-columna">.medio-2</span></div>
+        <div class="peque-12 medio-2"><span class="muestra-columna">.medio-2</span></div>
+        <div class="peque-12 medio-3"><span class="muestra-columna">.medio-3</span></div>
+        <div class="peque-12 medio-3"><span class="muestra-columna">.medio-3</span></div>
+        <div class="peque-12 medio-3"><span class="muestra-columna">.medio-3</span></div>
+        <div class="peque-12 medio-3"><span class="muestra-columna">.medio-3</span></div>
+        <div class="peque-12 medio-4"><span class="muestra-columna">.medio-4</span></div>
+        <div class="peque-12 medio-4"><span class="muestra-columna">.medio-4</span></div>
+        <div class="peque-12 medio-4"><span class="muestra-columna">.medio-4</span></div>
+        <div class="peque-12 medio-5"><span class="muestra-columna">.medio-5</span></div>
+        <div class="peque-12 medio-5"><span class="muestra-columna">.medio-5</span></div>
+        <div class="peque-12 medio-2"><span class="muestra-columna">.medio-2</span></div>
+        <div class="peque-12 medio-6"><span class="muestra-columna">.medio-6</span></div>
+        <div class="peque-12 medio-6"><span class="muestra-columna">.medio-6</span></div>
+        <div class="peque-12 medio-7"><span class="muestra-columna">.medio-7</span></div>
+        <div class="peque-12 medio-5"><span class="muestra-columna">.medio-5</span></div>
+        <div class="peque-12 medio-8"><span class="muestra-columna">.medio-8</span></div>
+        <div class="peque-12 medio-4"><span class="muestra-columna">.medio-4</span></div>
+        <!-- Código -->
+        <div class="peque-12">
+          <h5>Muestra</h5>
+          <pre><code>
+  &lt;section class=&quot;bloque&quot;&gt;
+    &lt;div class=&quot;peque-12 medio-4&quot;&gt;Contenido...&lt;/div&gt;
+    &lt;div class=&quot;peque-12 medio-4&quot;&gt;Contenido...&lt;/div&gt;
+    &lt;div class=&quot;peque-12 medio-4&quot;&gt;Contenido...&lt;/div&gt;
+  &lt;/section&gt;
+          </code></pre>
+        </div>
+      </section>
+
+
+      <!-- CUADRÍCULA AVANZADA -->
+
+      <section class="bloque">
+        <header class="peque-12">
+          <h3>CUADRÍCULA AVANZADA</h3>
+          <hr>
+        </header>
+
+        <!-- CUADRÍCULA SIN MEDIANIL -->
+        <div class="peque-12">
+          <h4>Cuadrícula sin medianil</h4>
+          <p>
+            En ocasiones podemos necesitar que nuestra estructura carezca de espacios intermedios, para eso tenemos la clase <code>.sin-medianil</code> que se debe aplicar como complemento de <code>.bloque</code>.
+          </p>
+        </div>
+        <section class="bloque sin-medianil">
+          <div class="peque-3"><span class="muestra-columna">.peque-3</span></div>
+          <div class="peque-3"><span class="muestra-columna">.peque-3</span></div>
+          <div class="peque-6"><span class="muestra-columna">.peque-6</span></div>
+        </section>
+
+        <!-- CUADRÍCULA AUTOMÁTICA -->
+        <div class="peque-12">
+          <h4>Cuadrícula automática</h4>
+          <p>
+            Para crear rejillas automáticas de anchuras equivalentes podemos usar la clase <code>.bloque-auto</code> dentro de un elemento <code>.bloque</code>. Esta rejilla escala desde cuatro columnas en pantallas grandes, a dos columnas en las pantallas más pequeñas.
+          </p>
+        </div>
+        <section class="bloque">
+          <div class="bloque-auto"><img src="http://placehold.it/350x350" alt="Bloque Automático"></div>
+          <div class="bloque-auto"><img src="http://placehold.it/350x350" alt="Bloque Automático"></div>
+          <div class="bloque-auto"><img src="http://placehold.it/350x350" alt="Bloque Automático"></div>
+          <div class="bloque-auto"><img src="http://placehold.it/350x350" alt="Bloque Automático"></div>
+          <div class="bloque-auto"><img src="http://placehold.it/350x350" alt="Bloque Automático"></div>
+          <div class="bloque-auto"><img src="http://placehold.it/350x350" alt="Bloque Automático"></div>
+          <div class="bloque-auto"><img src="http://placehold.it/350x350" alt="Bloque Automático"></div>
+          <div class="bloque-auto"><img src="http://placehold.it/350x350" alt="Bloque Automático"></div>
+        </section>
+        <!-- Código -->
+        <div class="peque-12">
+          <h5>Muestra</h5>
+          <pre><code>
+  &lt;section class=&quot;bloque&quot;&gt;
+    &lt;div class=&quot;bloque-auto&quot;&gt;&lt;img src=&quot;http://placehold.it/350x350&quot; alt=&quot;Bloque Autom&aacute;tico&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;bloque-auto&quot;&gt;&lt;img src=&quot;http://placehold.it/350x350&quot; alt=&quot;Bloque Autom&aacute;tico&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;bloque-auto&quot;&gt;&lt;img src=&quot;http://placehold.it/350x350&quot; alt=&quot;Bloque Autom&aacute;tico&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;bloque-auto&quot;&gt;&lt;img src=&quot;http://placehold.it/350x350&quot; alt=&quot;Bloque Autom&aacute;tico&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;bloque-auto&quot;&gt;&lt;img src=&quot;http://placehold.it/350x350&quot; alt=&quot;Bloque Autom&aacute;tico&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;bloque-auto&quot;&gt;&lt;img src=&quot;http://placehold.it/350x350&quot; alt=&quot;Bloque Autom&aacute;tico&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;bloque-auto&quot;&gt;&lt;img src=&quot;http://placehold.it/350x350&quot; alt=&quot;Bloque Autom&aacute;tico&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;bloque-auto&quot;&gt;&lt;img src=&quot;http://placehold.it/350x350&quot; alt=&quot;Bloque Autom&aacute;tico&quot;&gt;&lt;/div&gt;
+  &lt;/section&gt;
+          </code></pre>
+        </div>
+
+        <!-- ALTURAS EQUIVALENTES -->
+        <div class="peque-12">
+          <h4>Alturas equivalentes</h4>
+          <p>
+            Para conseguir columnas o elementos de igual altura añade la clase <code>.alturas-iguales</code> al elemento contenedor (.bloque en este caso) e <code>.iguala</code> a los descendientes directos de este.
+          </p>
+        </div>
+        <section class="bloque alturas-iguales">
+          <div class="peque-12 medio-4 borde--derecha-1 iguala">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+          <div class="peque-12 medio-4 borde--derecha-1 iguala">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+          <div class="peque-12 medio-4 iguala">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </div>
+        </section>
+        <!-- Código -->
+        <div class="peque-12">
+          <h5>Muestra</h5>
+          <pre><code>
+  &lt;section class=&quot;bloque alturas-iguales&quot;&gt;
+    &lt;div class=&quot;peque-12 medio-4 iguala&quot;&gt;
+      contenido...
+    &lt;/div&gt;
+    &lt;div class=&quot;peque-12 medio-4 iguala&quot;&gt;
+      contenido...
+    &lt;/div&gt;
+    &lt;div class=&quot;peque-12 medio-4 iguala&quot;&gt;
+      contenido...
+    &lt;/div&gt;
+  &lt;/section&gt;
+          </code></pre>
+        </div>
+
+        <!-- CENTRAR COLUMNAS -->
+        <div class="peque-12">
+          <h4>Centrar columnas</h4>
+          <p>
+            Para crear una columna centrada usaremos <code>.columna-centrada</code> junto a una clase <code>.medio-*</code> (o equivalente) menor de 12.
+          </p>
+          <section class="bloque fondo-plata">
+            <div class="medio-3 columna-centrada">
+              <span class="muestra-columna">.medio-3 .columna-centrada</span>
+            </div>
+          </section>
+        </div>
+
+        <!-- LISTA DE CLASES -->
+        <div class="peque-12">
+          <h4>Lista de clases</h4>
+          <p>A continuación se detallan todas las clases que tienen relación con la cuadrícula.</p>
+          <table class="tabla-destacada tabla-bordeada tabla-espaciada">
+            <thead>
+              <th>Clase</th>
+              <th>Rango</th>
+              <th></th>
+            </thead>
+            <tr>
+              <th>.peque-[1-12]</th>
+              <td>Entre 0 y 599px</td>
+              <td>Genera divisiones verticales en tamaños de pantalla pequeños.</td>
+            </tr>
+            <tr>
+              <th>.medio-[1-12]</th>
+              <td>Entre 600 y 1199px</td>
+              <td>Genera divisiones verticales en tamaños de pantalla medianos.</td>
+            </tr>
+            <tr>
+              <th>.grande-[1-12]</th>
+              <td>De 1200px en adelante</td>
+              <td>Genera divisiones verticales en tamaños de pantalla grandes.</td>
+            </tr>
+            <tr>
+              <th>.sin-medianil</th>
+              <td>todos</td>
+              <td>Elimina los espacios entre divisiones verticales.</td>
+            </tr>
+            <tr>
+              <th>.bloque-auto</th>
+              <td>todos</td>
+              <td>Crea una rejilla de al menos cuatro elementos que se adapta al tamaño de la ventana.</td>
+            </tr>
+            <tr>
+              <th>.alturas-iguales</th>
+              <td>De 600px en adelante</td>
+              <td>Aplica comportamiento de tabla al elemento.</td>
+            </tr>
+            <tr>
+              <th>.iguala</th>
+              <td>De 600px en adelante</td>
+              <td>Aplica comportamiento de celda de tabla al elemento. En pantallas pequeñas los elementos se apilarán.</td>
+            </tr>
+            <tr>
+              <th>.columna-centrada</th>
+              <td>todos</td>
+              <td>Centra una división vertical que sea menor de 12 columnas.</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+
+      <!-- COLORES -->
+
+      <section class="bloque">
+        <header class="peque-12">
+          <h3>COLORES</h3>
+          <hr>
+        </header>
+        <div class="peque-12">
+          <p>
+            La paleta de colores que proporciona Utuqu se puede usar en fondos, bordes, texto y botones. Las clases están definidas en el apartado <i>Utilidades</i>.
+          </p>
+          <p><a href="#0">Lista completa de utilidades de color</a></p>
+        </div>
+        <div class="peque-12 medio-2"><div class="muestra-color fondo-negro"></div></div>
+        <div class="peque-12 medio-2"><div class="muestra-color fondo-gris--oscuro"></div></div>
+        <div class="peque-12 medio-2"><div class="muestra-color fondo-gris--medio"></div></div>
+        <div class="peque-12 medio-2"><div class="muestra-color fondo-gris"></div></div>
+        <div class="peque-12 medio-2"><div class="muestra-color fondo-plata"></div></div>
+        <div class="peque-12 medio-2"><div class="muestra-color fondo-marino"></div></div>
+        <div class="peque-12 medio-2"><div class="muestra-color fondo-azul"></div></div>
+        <div class="peque-12 medio-2"><div class="muestra-color fondo-turquesa"></div></div>
+        <div class="peque-12 medio-2"><div class="muestra-color fondo-agua"></div></div>
+        <div class="peque-12 medio-2"><div class="muestra-color fondo-lima"></div></div>
+        <div class="peque-12 medio-2"><div class="muestra-color fondo-verde"></div></div>
+        <div class="peque-12 medio-2"><div class="muestra-color fondo-oliva"></div></div>
+        <div class="peque-12 medio-2"><div class="muestra-color fondo-granate"></div></div>
+        <div class="peque-12 medio-2"><div class="muestra-color fondo-morado"></div></div>
+        <div class="peque-12 medio-2"><div class="muestra-color fondo-fucsia"></div></div>
+        <div class="peque-12 medio-2"><div class="muestra-color fondo-rojo"></div></div>
+        <div class="peque-12 medio-2"><div class="muestra-color fondo-naranja"></div></div>
+        <div class="peque-12 medio-2"><div class="muestra-color fondo-amarillo"></div></div>
+      </section>
+
+
+      <!-- TEXTO -->
+
+      <section class="bloque">
+        <div class="peque-12">
+          <h3>TEXTO</h3>
+          <hr>
+        </div>
+        <div class="peque-12">
+          <p>
+            Utuqu proporciona estilos básicos para titulares, listas, texto de copia, citas, super y sub índices, combinaciones de teclas y bloques de código. Además, incluye algunas utilidades como <code>.texto-centrado</code> o <code>.texto-justificado</code> para añadir estilos comunes a los bloques de texto.
+          </p>
+          <p><a href="#0">Lista completa de utilidades de texto</a></p>
+        </div>
+        <div class="peque-12 medio-6">
+          <h1>Titular h1</h1>
+          <h2>Titular h2</h2>
+          <h3>Titular h3</h3>
+          <h4>Titular h4</h4>
+          <h5>Titular h5</h5>
+          <div class="peque-12 medio-6">
+            <h4>Lista desordenada</h4>
+            <ul>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+          <div class="peque-12 medio-6">
+            <h4>UL .lista-pelada</h4>
+            <ul class="lista-pelada">
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+          <div class="peque-12 medio-6">
+            <h4>Lista ordenada</h4>
+            <ol>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ol>
+          </div>
+          <div class="peque-12 medio-6">
+            <h4>OL .lista-pelada</h4>
+            <ol class="lista-pelada">
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ol>
+          </div>
+          <div class="medio-12">
+            <h4>Lista horizontal</h4>
+            <ul class="lista-horizontal">
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+        </div>
+        <div class="peque-12 medio-6">
+          <p class="texto-destacado">Lorem ipsum dolor sit amet, consectetur adipiscing elit aliqua.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur <kbd>CTRL+ALT</kbd> elit, sed do <code>.clase</code> tempor incididunt ut labore et dolore magna aliqua. Varius<sup>1</sup> quam quisque<sub>2</sub> id diam. Pellentesque massa <small>placerat duis ultricies</small> lacus. Vitae tempus quam pellentesque nec nam aliquam sem et tortor. Diam volutpat commodo sed egestas. Dictum non consectetur a erat nam.</p>
+          <p class="texto-centrado">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <p class="texto-justificado">Lorem ipsum dolor sit amet, consectetur adipiscing elit aliqua. gestas dui id ornare arcu. In ante metus dictum at tempor commodo ullamcorper a. Viverra suspendisse potenti nullam ac tortor vitae purus.</p>
+          <blockquote>
+            Lorem ipsum dolor sit amet
+          </blockquote>
+  <pre><code>code {
+      color: #777;
+      background-color: #EFEFEF;
+      border: 1px solid #CCC
+  }</code></pre>
+        </div>
+      </section>
+
+
+      <!-- IMAGENES -->
+
+      <section class="bloque">
+        <header class="peque-12">
+          <h3>IMÁGENES</h3>
+          <hr>
+        </header>
+        <div class="peque-12">
+          <p>
+            Las imágenes son responsivas por defecto. Basta con añadir un elemento <code>img</code> y automáticamente se redimensionará cuando cambie el tamaño de la pantalla. Para conseguir imágenes redondas añade la clase <code>.imagen-redondeada</code> a una imagen con la misma altura y anchura.
+          </p>
+        </div>
+        <div class="peque-12 medio-3">
+          <img src="https://unsplash.it/1920/?random" alt="">
+        </div>
+        <div class="peque-12 medio-2">
+          <img src="https://unsplash.it/1920/?random" alt="">
+        </div>
+        <div class="peque-12 medio-1">
+          <img src="https://unsplash.it/1920/?random" alt="">
+        </div>
+        <div class="peque-12 medio-3">
+          <img class="imagen-circular" src="https://unsplash.it/600/?random" alt="">
+        </div>
+        <div class="peque-12 medio-2">
+          <img class="imagen-circular" src="https://unsplash.it/600/?random" alt="">
+        </div>
+        <div class="peque-12 medio-1">
+          <img class="imagen-circular" src="https://unsplash.it/600/?random" alt="">
+        </div>
+        <!-- Código -->
+        <div class="peque-12">
+          <h5>Muestra</h5>
+          <pre><code>
+  &lt;img src=&quot;https://unsplash.it/1920x700&quot; alt=&quot;imagen&quot;&gt;
+  &lt;img class=&quot;imagen-circular&quot; src=&quot;https://unsplash.it/600x600&quot; alt=&quot;imagen&quot;&gt;
+          </code></pre>
+        </div>
+      </section>
+
+
+      <!-- IFRAMES -->
+
+      <section class="bloque">
+        <header class="peque-12">
+          <h3>IFRAMES</h3>
+          <hr>
+        </header>
+        <div class="peque-12">
+          <p>
+            Combinando las clases <code>.iframe</code> y <code>.ratio--*</code> se consiguen <i>iframes</i> responsivos en los dos ratios más habituales. También puedes crear tu propia clase <code>.ratio--*</code> para adaptarte a formatos menos convencionales.
+          </p>
+        </div>
+        <div class="peque-12 medio-6">
+          <figure class="iframe ratio--4-3">
+            <iframe
+              src="https://www.youtube.com/embed/SbCt-iXIXlQ?rel=0&amp;controls=0&amp;showinfo=0"
+              frameborder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen>
+            </iframe>
+          </figure>
+        </div>
+        <div class="peque-12 medio-3">
+          <figure class="iframe ratio--4-3">
+            <iframe
+              src="https://www.youtube.com/embed/SbCt-iXIXlQ?rel=0&amp;controls=0&amp;showinfo=0"
+              frameborder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen>
+            </iframe>
+          </figure>
+        </div>
+        <div class="peque-12 medio-2">
+          <figure class="iframe ratio--4-3">
+            <iframe
+              src="https://www.youtube.com/embed/SbCt-iXIXlQ?rel=0&amp;controls=0&amp;showinfo=0"
+              frameborder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen>
+            </iframe>
+          </figure>
+        </div>
+        <div class="peque-12 medio-1">
+          <figure class="iframe ratio--4-3">
+            <iframe
+              src="https://www.youtube.com/embed/SbCt-iXIXlQ?rel=0&amp;controls=0&amp;showinfo=0"
+              frameborder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen>
+            </iframe>
+          </figure>
+        </div>
+        <!-- Código -->
+        <div class="peque-12">
+          <h5>Muestra</h5>
+          <pre><code>
+  &lt;figure class=&quot;iframe ratio--4-3&quot;&gt;
+    &lt;iframe
+      src=&quot;https://www.youtube.com/embed/SbCt-iXIXlQ?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot;
+      frameborder=&quot;0&quot;
+      webkitallowfullscreen
+      mozallowfullscreen
+      allowfullscreen&gt;
+    &lt;/iframe&gt;
+  &lt;/figure&gt;
+          </code></pre>
+        </div>
+      </section>
+
+
+      <!-- BOTONES -->
+
+      <section class="bloque">
+        <header class="peque-12">
+          <h3>BOTONES</h3>
+          <hr>
+        </header>
+        <div class="peque-12">
+          <p>
+            Los botones se construyen usando el elemento <kbd>button</kbd> pero en algunas situaciones es necesario (o inevitable) usar anclas para este fin, o incluso otro tipo de elemento. La clase <code>.boton</code> es suficientemente flexible para aplicarse a cualquier tipo de elemento. La clase se extiende con <code>.secundario</code>, <code>.plano</code> y <code>.redondo</code>.
+          </p>
+        </div>
+        <div class="peque-12">
+          <button class="boton">NORMAL</button>
+          <button class="boton secundario">SECUNDARIO</button>
+          <button class="boton plano">PLANO</button>
+          <button class="boton redondo"><i class="material-icons">&#xE84E;</i></button>
+        </div>
+        <!-- Código -->
+        <div class="peque-12">
+          <h5>Muestra</h5>
+          <pre><code>
+  &lt;button class=&quot;boton&quot;&gt;BOTÓN NORMAL&lt;/button&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <!-- SOLAPAS -->
+
+      <section class="bloque">
+        <header class="peque-12">
+          <h3>SOLAPAS</h3>
+          <hr>
+        </header>
+        <div class="peque-12">
+          <p>
+            Este componente genera un grupo de solapas responsivas únicamente con <kbd>CSS</kbd>. En dispositivos con pantallas estrechas se comporta como un acordeón. Basta con añadir el marcaje correcto y definir tantas solapas como se desee.
+          </p>
+        </div>
+        <div class="peque-12">
+          <div class="solapas">
+           <input class="solapa_disparador" type="radio" id="solapa_uno" name="solapas" checked>
+           <label class="solapa_etiqueta" for="solapa_uno">Uno</label>
+           <div class="solapa_contenido">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           </div>
+
+           <input class="solapa_disparador" type="radio" id="solapa_dos" name="solapas">
+           <label class="solapa_etiqueta" for="solapa_dos">Dos</label>
+           <div class="solapa_contenido">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           </div>
+
+           <input class="solapa_disparador" type="radio" id="solapa_tres" name="solapas">
+           <label class="solapa_etiqueta" for="solapa_tres">Tres</label>
+           <div class="solapa_contenido">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           </div>
+
+           <input class="solapa_disparador" type="radio" id="solapa_cuatro" name="solapas">
+           <label class="solapa_etiqueta" for="solapa_cuatro">Cuatro</label>
+           <div class="solapa_contenido">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           </div>
+
+           <input class="solapa_disparador" type="radio" id="solapa_cinco" name="solapas">
+           <label class="solapa_etiqueta" for="solapa_cinco">Cinco</label>
+           <div class="solapa_contenido">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           </div>
+
+           <input class="solapa_disparador" type="radio" id="solapa_seis" name="solapas">
+           <label class="solapa_etiqueta" for="solapa_seis">Seis</label>
+           <div class="solapa_contenido">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           </div>
+          </div>
+        </div>
+        <!-- Código -->
+        <div class="peque-12">
+          <h5>Muestra</h5>
+          <pre><code>
+&lt;div class=&quot;solapas&quot;&gt;
+ &lt;input class=&quot;solapa_input&quot; type=&quot;radio&quot; id=&quot;solapa_uno&quot; name=&quot;solapas&quot; checked&gt;
+ &lt;label class=&quot;solapa_etiqueta&quot; for=&quot;solapa_uno&quot;&gt;Uno&lt;/label&gt;
+ &lt;div class=&quot;solapa_contenido&quot;&gt;
+   Contenido...
+ &lt;/div&gt;
+
+ &lt;input class=&quot;solapa_input&quot; type=&quot;radio&quot; id=&quot;solapa_dos&quot; name=&quot;solapas&quot;&gt;
+ &lt;label class=&quot;solapa_etiqueta&quot; for=&quot;solapa_dos&quot;&gt;Dos&lt;/label&gt;
+ &lt;div class=&quot;solapa_contenido&quot;&gt;
+   Contenido...
+ &lt;/div&gt;
+
+ &lt;input class=&quot;solapa_input&quot; type=&quot;radio&quot; id=&quot;solapa_tres&quot; name=&quot;solapas&quot;&gt;
+ &lt;label class=&quot;solapa_etiqueta&quot; for=&quot;solapa_tres&quot;&gt;Tres&lt;/label&gt;
+ &lt;div class=&quot;solapa_contenido&quot;&gt;
+   Contenido...
+ &lt;/div&gt;
+&lt;/div&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <!-- ACORDEÓN -->
+
+      <section class="bloque">
+        <header class="peque-12">
+          <h3>ACORDEÓN</h3>
+          <hr>
+        </header>
+        <div class="peque-12">
+          <p>
+            El acordeón de Utuqu está implementado mediante la etiqueta nativa <code>&lt;details&gt;</code> a la que tan solo se le han añadido algunos estilos, y su proposito es proporcionar una manera de mostrar contenido secundario. Para marcar un elemento como abierto solo debemos añadir el atributo <code>open</code>.
+          </p>
+          <p>NOTA: <code>&lt;details&gt;</code> está soportado en todos los navegadores excepto (¡sorpresa!) en IE y Edge. Datos de soporte actualizados en <a href="http://caniuse.com/#feat=details">caniuse.com</a>.</p>
+        </div>
+        <div class="peque-12">
+          <details open>
+             <summary>Título</summary>
+             <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+             </p>
+          </details>
+          <details>
+             <summary>Título</summary>
+             <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+             </p>
+          </details>
+          <details>
+             <summary>Título</summary>
+             <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+             </p>
+          </details>
+        </div>
+        <!-- Código -->
+        <div class="peque-12">
+          <h5>Muestra</h5>
+          <pre><code>
+  &lt;details open&gt;
+     &lt;summary&gt;T&iacute;tulo&lt;/summary&gt;
+     &lt;p&gt;
+       Contenido...
+     &lt;/p&gt;
+  &lt;/details&gt;
+          </code></pre>
+        </div>
+      </section>
+
+
+      <!-- DESPLEGABLE -->
+
+      <section class="bloque">
+        <header class="peque-12">
+          <h3>DESPLEGABLE</h3>
+          <hr>
+        </header>
+        <div class="peque-12">
+          <p>
+            Este componente genera un menú desplegable básico y puede ser lanzado con un <code>a</code> y con elementos de formulario como <code>input</code> y <code>button</code>. Como se utiliza la propiedad <i>:focus</i> para emular el estado, para usarlo en otro tipo de elementos hay que añadir <code>tabindex="-1"</code> al elemento que aloja la clase <code>.desplegable_abre</code>. La clase <code>.boton</code> solo se usa con fines estilísticos.
+          </p>
+        </div>
+        <div class="peque-12">
+          <aside class="desplegable">
+            <button class="boton desplegable_abre">DESPLIÉGAME</button>
+            <ul class="desplegable_contenido">
+              <li class="desplegable_item"><a href="#0">Item</a></li>
+              <li class="desplegable_item"><a href="#0">Item</a></li>
+              <li class="desplegable_item"><a href="#0">Item</a></li>
+            </ul>
+          </aside>
+        </div>
+        <!-- Código -->
+        <div class="peque-12">
+          <h5>Muestra</h5>
+          <pre><code>
+  &lt;aside class=&quot;desplegable&quot;&gt;
+    &lt;a href=&quot;#0&quot; class=&quot;boton desplegable_abre&quot;&gt;CON DESPLEGABLE&lt;/a&gt;
+    &lt;ul class=&quot;desplegable_contenido&quot;&gt;
+      &lt;li class=&quot;desplegable_item&quot;&gt;&lt;a href=&quot;#0&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;desplegable_item&quot;&gt;&lt;a href=&quot;#0&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;desplegable_item&quot;&gt;&lt;a href=&quot;#0&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/aside&gt;
+
+  &lt;aside class=&quot;desplegable&quot;&gt;
+    &lt;button href=&quot;#0&quot; class=&quot;boton desplegable_abre&quot;&gt;CON DESPLEGABLE&lt;/button&gt;
+    &lt;ul class=&quot;desplegable_contenido&quot;&gt;
+      &lt;li class=&quot;desplegable_item&quot;&gt;&lt;a href=&quot;#0&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;desplegable_item&quot;&gt;&lt;a href=&quot;#0&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;desplegable_item&quot;&gt;&lt;a href=&quot;#0&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/aside&gt;
+          </code></pre>
+        </div>
+      </section>
+
+
+      <!-- EMERGENTE -->
+
+      <section class="bloque">
+        <header class="peque-12">
+          <h3>EMERGENTE</h3>
+          <hr>
+        </header>
+
+        <div class="peque-12">
+          <p>
+            El componente emergente sirve para mostrar contenido o acciones secundarias. Consta de dos componentes; el disparador, que puede ser cualquier elemento que soporte la seudo-propiedad <i>:focus</i> o que tenga el atributo <i>tabindex</i>, y el contenido del elemento emergente.
+          </p>
+        </div>
+
+        <div class="peque-12">
+          <button class="boton emergente_abre">ELEMENTO EMERGENTE</button>
+          <section class="emergente_contenido">
+            <header>
+              <span class="emergente_cierra">&times;</span>
+              <h3>Titulo del emergente</h3>
+            </header>
+            <p class="texto-destacado">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </section>
+        </div>
+
+        <!-- Código -->
+        <div class="peque-12">
+          <h5>Muestra</h5>
+          <pre><code>
+  &lt;button class=&quot;boton emergente_abre&quot;&gt;ELEMENTO EMERGENTE&lt;/button&gt;
+  &lt;section class=&quot;emergente_contenido&quot;&gt;
+    &lt;header&gt;
+      &lt;span class=&quot;emergente_cierra&quot;&gt;&amp;times;&lt;/span&gt;
+      &lt;h3&gt;T&iacute;tulo del emergente&lt;/h3&gt;
+    &lt;/header&gt;
+    &lt;p&gt;
+      Aqui va el contenido
+    &lt;/p&gt;
+  &lt;/section&gt;
+          </code></pre>
+        </div>
+      </section>
+
+
+      <!-- FORMULARIOS -->
+
+      <section class="bloque">
+        <header class="peque-12">
+          <h3>FORMULARIOS</h3>
+          <hr>
+        </header>
+
+        <div class="peque-12">
+          <p>Estilos básicos para formularios sencillos. La clase <code>.grupo</code> tiene la función de unificar la forma en que los navegadores interpretan la etiqueta <kbd>fieldset</kbd>. Usa <code>.leyenda</code> dentro de <kbd>form</kbd> para añadir información de apoyo a los campos de formulario.</p>
+        </div>
+
+        <div class="peque-12 medio-6">
+          <form action="index.html" method="post">
+            <fieldset class="grupo">
+              <legend>Inputs</legend>
+              <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre">
+                <p class="leyenda">Esto es un texto de ayuda</p>
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input type="email" name="email">
+              </div>
+              <div>
+                <label for="telefono">Teléfono</label>
+                <input type="tel" name="telefono">
+              </div>
+              <div>
+                <label for="clave">Contraseña</label>
+                <input type="password" name="clave">
+              </div>
+              <div>
+                <label for="comentario">Comentario</label>
+                <textarea name="comentario" rows="8" cols="60"></textarea>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="peque-12 medio-6">
+          <form class="" action="index.html" method="post">
+            <fieldset class="grupo">
+              <legend>Selección</legend>
+              <div>
+                <input type="radio" name="os" value="Ubuntu" checked>
+                <label for="os">Ubuntu</label>
+                <input type="radio" name="os" value="Elementary">
+                <label for="os">Elementary</label>
+                <input type="radio" name="os" value="Antergos">
+                <label for="os">Antergos</label>
+              </div>
+              <div>
+                <input type="checkbox" name="tecnologia1" value="Portatil">
+                <label for="tecnologia1">Tengo un portatil</label>
+                <input type="checkbox" name="tecnologia2" value="Tablet">
+                <label for="tecnologia2">Tengo una tablet</label>
+                <input type="checkbox" name="tecnologia3" value="Teléfono">
+                <label for="tecnologia3">Tengo un teléfono</label>
+              </div>
+              <div>
+                <label for="escritorios">Escritorios</label>
+                <select name="escritorios">
+                  <option value="Gnome">Gnome</option>
+                  <option value="Unity">Unity</option>
+                  <option value="Kde">Kde</option>
+                  <option value="Mate">Mate</option>
+                </select>
+              </div>
+              <div>
+                <label for="navegadores">Navegadores</label>
+                <input type="datalist" list="navegadores" name="navegadores">
+                <p class="leyenda">Escribe para ver las opciones</p>
+                <datalist id="navegadores">
+                  <option value="Firefox">
+                  <option value="Chrome">
+                  <option value="Opera">
+                  <option value="Safari">
+                </datalist>
+              </div>
+              <div>
+                <button class="boton" type="submit">Enviar</button>
+                <button class="boton plano" type="reset">Cancelar</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+
+
+      <!-- TABLAS -->
+
+      <section class="bloque">
+        <header class="peque-12">
+          <h3>TABLAS</h3>
+          <hr>
+        </header>
+        <div class="peque-12">
+          <table>
+           <caption>Tabla normal</caption>
+           <thead>
+             <th>Cabecera 1</th>
+             <th>Cabecera 2</th>
+             <th>Cabecera 3</th>
+             <th>Cabecera 4</th>
+             <th>Cabecera 5</th>
+             <th>Cabecera 6</th>
+           </thead>
+           <tr>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+           </tr>
+           <tr>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+           </tr>
+           <tr>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+           </tr>
+          </table>
+        </div>
+        <div class="peque-12">
+          <table class="tabla-bordeada">
+            <caption>Tabla bordeada</caption>
+           <thead>
+             <th>Cabecera 1</th>
+             <th>Cabecera 2</th>
+             <th>Cabecera 3</th>
+             <th>Cabecera 4</th>
+             <th>Cabecera 5</th>
+             <th>Cabecera 6</th>
+           </thead>
+           <tr>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+           </tr>
+           <tr>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+           </tr>
+           <tr>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+           </tr>
+          </table>
+        </div>
+        <div class="peque-12">
+          <table class="tabla-rayada">
+           <caption>Tabla rayada</caption>
+           <thead>
+             <th>Cabecera 1</th>
+             <th>Cabecera 2</th>
+             <th>Cabecera 3</th>
+             <th>Cabecera 4</th>
+             <th>Cabecera 5</th>
+             <th>Cabecera 6</th>
+           </thead>
+           <tr>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+           </tr>
+           <tr>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+           </tr>
+           <tr>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+           </tr>
+          </table>
+        </div>
+        <div class="peque-12">
+          <table class="tabla-destacada">
+           <caption>Tabla destacada</caption>
+           <thead>
+             <th>Cabecera 1</th>
+             <th>Cabecera 2</th>
+             <th>Cabecera 3</th>
+             <th>Cabecera 4</th>
+             <th>Cabecera 5</th>
+             <th>Cabecera 6</th>
+           </thead>
+           <tr>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+           </tr>
+           <tr>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+           </tr>
+           <tr>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+           </tr>
+          </table>
+        </div>
+        <div class="peque-12">
+          <table class="tabla-destacada tabla-rayada tabla-bordeada">
+           <caption>Tabla completa</caption>
+           <thead>
+             <th>Cabecera 1</th>
+             <th>Cabecera 2</th>
+             <th>Cabecera 3</th>
+             <th>Cabecera 4</th>
+             <th>Cabecera 5</th>
+             <th>Cabecera 6</th>
+           </thead>
+           <tr>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+           </tr>
+           <tr>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+           </tr>
+           <tr>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+           </tr>
+          </table>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+/*
+*   UTUQU - CUADRICULA
+*************************************************/
+
+/*
+  ## TODO:
+  * Crear estilos para pantallas extra grandes: 1920 en adelante
+*/
+
+/*  Creamos un contenedor horizontal con la anchura máxima deseada */
+.bloque
+{
+  max-width: 1200px;
+  margin: 0 auto;
+  clear: both;
+}
+
+/*  Clarificamos las flotaciones */
+.bloque:after
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*  No queremos margen en los bloques
+    anidados en otros bloques */
+.bloque .bloque
+{
+  padding: 0;
+}
+
+/*  Bueeeno... los que no tengan medianil sí */
+.bloque .bloque.sin-medianil
+{
+  padding: 0 1rem;
+}
+
+/*  ...excepto si está anidado en una columna */
+[class*='peque-'] .bloque.sin-medianil,
+[class*='medio-'] .bloque.sin-medianil,
+[class*='grande-'] .bloque.sin-medianil
+{
+  padding: 0;
+}
+
+/*  Ajustamos las columnas al margen izquierdo */
+[class*='peque-'],
+[class*='medio-'],
+[class*='grande-']
+{
+  float: left;
+  padding: 1rem;
+}
+
+/*  Definimos los tamaños para la vista
+    por debajo de 600px */
+.peque-1        { width: 8.33%; }
+.peque-2        { width: 16.66%; }
+.peque-3        { width: 25%; }
+.peque-4        { width: 33.33%; }
+.peque-5        { width: 41.66%; }
+.peque-6        { width: 50%; }
+.peque-7        { width: 58.33%; }
+.peque-8        { width: 66.66%; }
+.peque-9        { width: 75%; }
+.peque-10       { width: 83.33%; }
+.peque-11       { width: 91.66%; }
+.peque-12       { width: 100%; }
+
+/*  Hasta 599px las columnas que no especifiquen un tamaño
+    para pantallas pequeñas se apilan una encima de la otra */
+[class*='medio-'],
+[class*='grande-']
+{
+  width: 100%;
+}
+
+/*  Definimos las vistas de 600px hasta 1199px */
+@media only screen and (min-width: 600px)
+{
+  .medio-1        { width: 8.33%; }
+  .medio-2        { width: 16.66%; }
+  .medio-3        { width: 25%; }
+  .medio-4        { width: 33.33%; }
+  .medio-5        { width: 41.66%; }
+  .medio-6        { width: 50%; }
+  .medio-7        { width: 58.33%; }
+  .medio-8        { width: 66.66%; }
+  .medio-9        { width: 75%; }
+  .medio-10       { width: 83.33%; }
+  .medio-11       { width: 91.66%; }
+  .medio-12       { width: 100%; }
+}
+
+/*  Definimos las vistas de 1200px en adelante */
+@media only screen and (min-width: 1200px)
+{
+  .grande-1        { width: 8.33%; }
+  .grande-2        { width: 16.66%; }
+  .grande-3        { width: 25%; }
+  .grande-4        { width: 33.33%; }
+  .grande-5        { width: 41.66%; }
+  .grande-6        { width: 50%; }
+  .grande-7        { width: 58.33%; }
+  .grande-8        { width: 66.66%; }
+  .grande-9        { width: 75%; }
+  .grande-10       { width: 83.33%; }
+  .grande-11       { width: 91.66%; }
+  .grande-12       { width: 100%; }
+}
+
+/*  Creamos una opción para eliminar
+    los espacios entre columnas */
+.sin-medianil > [class*='peque-'],
+.sin-medianil > [class*='medio-'],
+.sin-medianil > [class*='grande-']
+{
+  padding: 0;
+}
+
+/* Cuadrícula automática */
+.bloque-auto
+{
+  float: left;
+  padding: 1rem;
+  width: 50%;
+}
+
+@media (min-width: 600px)
+{
+  .bloque-auto { width: 33.33%; }
+}
+
+@media (min-width: 1200px)
+{
+  .bloque-auto { width: 25%; }
+}
+
+/*  Utilidad para centrar columnas */
+.columna-centrada
+{
+  float: none;
+  margin: 0 auto;
+}
+
+/*  Comentado hasta que sepamos controlarlo
+    en pantallas pequeñas
+.empuja-1                   { left: 8.33%; }
+.empuja-2                   { left: 16.66%; }
+.empuja-3                   { left: 25%; }
+.empuja-4                   { left: 33.33%; }
+.empuja-5                   { left: 41.66%; }
+.empuja-6                   { left: 50%; }
+.empuja-7                   { left: 58.33%; }
+.empuja-8                   { left: 66.66%; }
+.empuja-9                   { left: 75%; }
+.empuja-10                  { left: 83.33%; }
+.empuja-11                  { left: 91.66%; }
+
+[class*='empuja-'] {
+  position: relative;
+}
+
+.estira-1                   { right: 8.33%; }
+.estira-2                   { right: 16.66%; }
+.estira-3                   { right: 25%; }
+.estira-4                   { right: 33.33%; }
+.estira-5                   { right: 41.66%; }
+.estira-6                   { right: 50%; }
+.estira-7                   { right: 58.33%; }
+.estira-8                   { right: 66.66%; }
+.estira-9                   { right: 75%; }
+.estira-10                  { right: 83.33%; }
+.estira-11                  { right: 91.66%; }
+
+[class*='estira-'] {
+  position: relative;
+}
+*/

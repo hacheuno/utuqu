@@ -1,0 +1,127 @@
+/*
+*   UTUQU
+*   -----
+*   Esta hoja de estilo contiene las importaciones,
+*   la configuración global y los estilos personalizados
+*   de la aplicación.
+*
+*   Versión: 0.2.0
+*   Autor: @hectorasencio
+*	  Licencia: LGNU/GPL3
+*
+*/
+
+/*  IMPORTACIONES
+
+    En esta sección se enlazan todos los elementos
+    que componen Utuqu. Comenta aquellos que no
+    necesites o añade tus propios elementos aqui.
+*********************************************************/
+
+@import "base/globales.css";
+@import "base/cuadricula.css";
+@import "base/texto.css";
+@import "base/botones.css";
+@import "base/tablas.css";
+@import "base/iframes.css";
+@import "base/utilidades.css";
+@import "base/formularios.css";
+@import "componentes/navegacion.css";
+@import "componentes/desplegable.css";
+@import "componentes/emergente.css";
+@import "componentes/acordeon.css";
+@import "componentes/solapas.css"; 
+
+/*@import "componentes/paneles.css"; Pendiente de implementar */
+/*@import "componentes/carrusel.css"; Pendiente de implementar */
+/*@import "componentes/reproductor.css"; Pendiente de implementar */
+/*@import "extensiones/iconos.css"; Pendiente de factorizar */
+/*@import "extensiones/filtros.css"; Pendiente de traducir */
+
+
+/*  CONFIGURACIÓN
+
+    Propiedades personalizadas donde podemos
+    definir valores globales para reutilizar.
+
+    Debido a la falta de soporte en algunos
+    navegadores y para conservar la compatibilidad
+    y la portabilidad de los componentes, de momento
+    Utuqu no usa propiedades personalizadas en su
+    código.
+
+    Si estás segura de que tus usuarios utilizan
+    navegadores compatibles, descomenta el bloque
+    y actualiza las propiedades correspondientes
+    para que encajen con tus estilos
+
+*************************************************/
+
+:root {
+    --anchura-maxima: 1200px;
+    --relleno-columnas: 1rem;
+    --relleno-columnas-negativo: -1rem;
+    --fuente-primaria: 'Roboto', sans-serif;
+    --color-primario: #333333;
+    --color-secundario: #DDDDDD;
+    --color-negativo: #FF4136;
+    --color-positivo: #3D9970;
+    --color-informativo: #0074D9;
+    --color-parrafo: #333333;
+    --color-titulares: #333333;
+    --color-invertido-parrafo: #FFFFFF;
+    --color-invertido-titulares: #FFFFFF;
+}
+
+
+/*  ESTILOS PERSONALIZADOS
+
+    Inserta en está sección los reajustes y
+    estilos relativos a tu proyecto
+*************************************************/
+
+body {
+  background-color: #EFEFEF;
+}
+
+section {
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  margin-bottom: 2rem !important;
+  padding: 2rem;
+}
+
+section section {
+  background-color: inherit;
+  border: none;
+  margin-bottom: 0 !important;
+  padding: 0;
+}
+
+
+@media (max-width: 1200px) {
+  section {
+    margin-bottom: 0 !important;
+    border: none;
+    border-bottom: 1px solid #CCC;
+  }
+}
+
+section section {
+  border: none;
+  box-shadow: none;
+}
+
+.muestra-columna {
+    display: block;
+    background: #333;
+    color: #FFF;
+    padding: .5rem;
+    font-size: .8em;
+}
+
+.muestra-color {
+    display: block;
+    min-width: 100%;
+    height: 177px;
+}

@@ -1,0 +1,157 @@
+/*
+*   UTUQU - TEXTO
+*************************************************/
+
+/*
+  TODO:
+  * Crear estilos para listas de definición
+*/
+
+/* COMUNES */
+
+h1, h2, h3, h4, h5 {
+    font-weight: bolder;
+    font-size: inherit;
+    color: inherit;
+}
+
+p, ul, ol { /* ¿No sería mejor darle este valor a cada elemento? */
+    margin-bottom: 1em;
+}
+
+a, b, i, strong, em, small, code {
+    line-height: 0;
+}
+
+/* TITULARES */
+
+h1 {
+    font-size: 4.25em;
+    line-height: 1.05882353em;
+    margin-bottom: 1.2rem;
+}
+
+h2 {
+    font-size: 2.625em;
+    line-height: 1.14285714em;
+    margin-bottom: 0.87142857rem;
+}
+
+h3 {
+    font-size: 1.625em;
+    line-height: 1.74615385em;
+    margin-bottom: .6rem;
+}
+
+h4 {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-bottom: .8rem;
+}
+
+h5 {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-bottom: 0;
+}
+
+/* ENLACES */
+
+a {
+    border-bottom: 1px solid #333;
+}
+
+a:hover, a:active, a:focus {
+    border-bottom: none;
+    color: #777;
+}
+
+/* LISTAS */
+
+ul {
+    margin-left: 1rem;
+}
+
+ol {
+    margin-left: 1rem;
+    list-style-type: decimal;
+}
+
+ul ul, ol ol, ul ol, ol ul {
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+.lista-pelada {
+  list-style: none;
+}
+
+.lista-horizontal {
+  margin-left: 0;
+}
+
+.lista-horizontal li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+/* ÉNFASIS */
+
+strong {
+    font-weight: bold;
+}
+
+blockquote {
+    display: block;
+    font-style: italic;
+    font-size: 120%;
+    padding: 1.5rem 3rem;
+    margin: 0 3rem 2rem 3rem;
+    color: #777;
+    border-left: 3px solid #777;
+}
+
+/* ÍNDICES */
+
+sub, sup {
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+    left: .1em;
+}
+
+sub {
+    bottom: -0.25em;
+    left: .1em;
+}
+
+/* CÓDIGO */
+
+pre {
+    color: #777;
+    background-color: #EFEFEF;
+    border: 1px solid #CCCCCC;
+    padding: 1rem 2rem;
+    overflow-x: auto;
+}
+
+code {
+    color: #777;
+    background-color: #EFEFEF;
+    border: 1px solid #CCCCCC;
+}
+
+pre code {
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+p code {
+    padding: 0 .5rem;
+}

@@ -1,0 +1,1177 @@
+/*
+  Creado por http://cssicon.space
+  Adaptado por http://hectorasencio.com
+*/
+/*
+  Buscar
+  <div class="icono_buscar"></div>
+*/
+.icono_buscar
+{
+  color: #333;
+  position: absolute;
+  margin-top: 2px;
+  margin-left: 3px;
+  width: 12px;
+  height: 12px;
+  border: solid 1px currentColor;
+  border-radius: 100%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.icono_buscar:before
+{
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 5px;
+  height: 6px;
+  width: 1px;
+  background-color: currentColor;
+}
+/*
+  Cerrar
+  <div class="icono_cerrar"></div>
+*/
+.icono_cerrar {
+  color: #000;
+  position: absolute;
+  margin-top: 0;
+  margin-left: 0;
+  width: 21px;
+  height: 21px;
+}
+.icono_cerrar:before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  width: 21px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.icono_cerrar:after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  width: 21px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+/*
+  Menú
+  <div class="icono_menu"></div>
+*/
+.icono_menu {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 10px;
+  width: 17px;
+  height: 1px;
+  background-color: currentColor;
+}
+.icono_menu:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 17px;
+  height: 1px;
+  background-color: currentColor;
+}
+.icono_menu:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 17px;
+  height: 1px;
+  background-color: currentColor;
+}
+/*
+  Flecha izquierda
+  <div class="icono_flecha-izquierda"></div>
+*/
+.icono_flecha-izquierda {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 10px;
+  width: 16px;
+  height: 1px;
+  background-color: currentColor;
+}
+.icono_flecha-izquierda:before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: -5px;
+  width: 10px;
+  height: 10px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+/*
+  Flecha derecha
+  <div class="icono_flecha-izquierda"></div>
+*/
+.arrow-right.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 10px;
+  width: 16px;
+  height: 1px;
+  background-color: currentColor;
+}
+.arrow-right.icon:before {
+  content: '';
+  position: absolute;
+  right: 1px;
+  top: -5px;
+  width: 10px;
+  height: 10px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+/*
+  Flecha arriba
+  <div class="icono_flecha-arriba"></div>
+*/
+.icono_flecha-arriba {
+  color: #000;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 3px;
+  width: 1px;
+  height: 16px;
+  background-color: currentColor;
+}
+.icono_flecha-arriba {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 1px;
+  width: 10px;
+  height: 10px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+/*
+  Flecha abajo
+
+*/
+.icono_flecha-abajo {
+  color: #000;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 2px;
+  width: 1px;
+  height: 16px;
+  background-color: currentColor;
+}
+.icono_flecha-abajo:before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 3px;
+  width: 10px;
+  height: 10px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+/*
+  Más
+  <div class="icono_mas"></div>
+*/
+.icono_mas {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 10px;
+}
+.icono_mas:before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 1px;
+  background-color: currentColor;
+}
+.icono_mas:after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+/*
+  Menos
+  <div class="icono_menos"></div>
+*/
+.icono_menos {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 10px;
+  width: 15px;
+  height: 1px;
+  background-color: currentColor;
+}
+/*
+  Comprobado
+  <div class="icono_comprobado"></div>
+*/
+.icono_comprobado {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 4px;
+  width: 14px;
+  height: 8px;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+/*
+  Prohibido
+  <div class="icono_prohibido"></div>
+*/
+.icono_prohibido {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border: solid 1px currentColor;
+  border-radius: 8px;
+}
+.icono_prohibido:before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: -1px;
+  width: 17px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+/*
+  Reloj
+  <div class="icono_reloj"></div>
+*/
+.icono_reloj {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  border: solid 1px currentColor;
+  border-radius: 8px;
+}
+.icono_reloj:before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 5px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+.icono_reloj:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 7px;
+  width: 1px;
+  height: 6px;
+  background-color: currentColor;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+/*
+  Corazón
+  <div class="icono_corazon"></div>
+*/
+.icono_corazon {
+  color: #000;
+  position: absolute;
+  margin-top: 6px;
+  margin-left: 5px;
+  width: 9px;
+  height: 9px;
+  border-left: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.icono_corazon:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -1px;
+  width: 8px;
+  height: 5px;
+  border-radius: 5px 5px 0 0;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+.icono_corazon:after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 8px;
+  width: 5px;
+  height: 8px;
+  border-radius: 0 5px 5px 0;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+/*
+  Impresion
+  <div class="icono_impresora"></div>
+*/
+.icono_impresora {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 5px;
+  width: 15px;
+  height: 6px;
+  border: solid 1px currentColor;
+  border-radius: 1px 1px 0 0;
+}
+.icono_impresora:before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: -3px;
+  height: 13px;
+  width: 9px;
+  border: solid 1px currentColor;
+  background-color: white;
+}
+.icono_impresora:after {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: -1px;
+  width: 13px;
+  height: 3px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  background-color: white;
+}
+/*
+  Editar
+  <div class="icono_editar"></div>
+*/
+.icono_editar {
+  color: #000;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 7px;
+  width: 14px;
+  height: 2px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.icono_editar:before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: -1px;
+  width: 0px;
+  height: 0px;
+  border-left: solid 5px transparent;
+  border-right: solid 5px currentColor;
+  border-top: solid 2px transparent;
+  border-bottom: solid 2px transparent;
+}
+/*
+  Enlace
+  <div class="icono_enlace"></div>
+*/
+.icono_enlace {
+  color: #000;
+  position: absolute;
+  margin-left: 8px;
+  margin-top: 10px;
+  width: 7px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.icono_enlace:before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -7px;
+  width: 8px;
+  height: 5px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+}
+.icono_enlace:after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  right: -7px;
+  width: 8px;
+  height: 5px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+}
+/*
+  Mapa
+  <div class="icono_mapa"></div>
+*/
+.icono_mapa {
+  color: #000;
+  position: absolute;
+  margin-left: 8px;
+  margin-top: 4px;
+  width: 4px;
+  height: 10px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  -webkit-transform: skewY(20deg);
+          transform: skewY(20deg);
+}
+.icono_mapa:before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 1px;
+  width: 4px;
+  height: 10px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  -webkit-transform: skewY(-40deg);
+          transform: skewY(-40deg);
+}
+.icono_mapa:after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: -3px;
+  width: 4px;
+  height: 10px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  -webkit-transform: skewY(-40deg);
+          transform: skewY(-40deg);
+}
+/*
+  Email
+  <div class="icono_email"></div>
+*/
+.icono_email {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 15px;
+  height: 10px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+}
+.icono_email:before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: -4px;
+  width: 1px;
+  height: 10px;
+  background-color: currentColor;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: rotate(-54deg);
+          transform: rotate(-54deg);
+}
+.icono_email:after {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: -4px;
+  width: 1px;
+  height: 10px;
+  background-color: currentColor;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: rotate(54deg);
+          transform: rotate(54deg);
+}
+/*
+  Favorito
+  <div class="icono_favorito"></div>
+*/
+.icono_favorito {
+  color: #000;
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 3px;
+  width: 10px;
+  height: 15px;
+  border-radius: 1px 1px 0 0;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+.icono_favorito:before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 1px;
+  width: 7px;
+  height: 7px;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+/*
+  Camara
+  <div class="icono_camara"></div>
+*/
+.icono_camara {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 5px;
+  width: 16px;
+  height: 10px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+}
+.icono_camara:before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  width: 4px;
+  height: 4px;
+  border-radius: 3px;
+  border: solid 1px currentColor;
+}
+.icono_camara:after {
+  content: '';
+  position: absolute;
+  right: 2px;
+  top: -2px;
+  width: 4px;
+  height: 1px;
+  border-radius: 1px 1px 0 0;
+  background-color: currentColor;
+}
+/*
+  Tarjeta
+  <div class="icono_tarjeta"></div>
+*/
+.icono_tarjeta {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 15px;
+  height: 10px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+}
+.icono_tarjeta:before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: -1px;
+  width: 17px;
+  height: 2px;
+  background-color: currentColor;
+}
+.icono_tarjeta:after {
+  content: '';
+  position: absolute;
+  right: 1px;
+  bottom: 2px;
+  width: 4px;
+  height: 1px;
+  background-color: currentColor;
+}
+/*
+  Bloqueado
+  <div class="icono_bloqueado"></div>
+*/
+.icono_bloqueado {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 10px;
+  width: 13px;
+  height: 6px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+}
+.icono_bloqueado:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: -8px;
+  width: 5px;
+  height: 6px;
+  border-radius: 4px 4px 0 0;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+/*
+  Desbloquedo
+  <div class="icono_desbloqueado"></div>
+*/
+.icono_desbloqueado {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 10px;
+  width: 13px;
+  height: 6px;
+  border: solid 1px currentColor;
+  border-radius: 1px;
+}
+.icono_desbloqueado:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: -8px;
+  width: 5px;
+  height: 3px;
+  border-radius: 4px 4px 0 0;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+.icono_desbloqueado:after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: -4px;
+  width: 1px;
+  height: 3px;
+  background-color: currentColor;
+}
+/*
+  Código
+  <div class="icono_codigo"></div>
+*/
+.icono_codigo {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 6px;
+}
+.icono_codigo:before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.icono_codigo:after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-bottom: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+/*
+  Etiqueta
+  <div class="icono_etiqueta"></div>
+*/
+.icono_etiqueta {
+  color: #000;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 3px;
+  width: 7px;
+  height: 7px;
+  border-radius: 1px 1px 1px 0;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+}
+.icono_etiqueta:before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  width: 9px;
+  height: 10px;
+  border-radius: 1px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.icono_etiqueta:after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+/*
+  Wifi
+  <div class="icono_wifi"></div>
+*/
+.icono_wifi {
+  color: #000;
+  position: absolute;
+  margin-left: 7px;
+  margin-top: 13px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px transparent;
+  border-bottom: solid 1px transparent;
+  border-left: solid 1px transparent;
+}
+.icono_wifi:before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px transparent;
+  border-bottom: solid 1px transparent;
+  border-left: solid 1px transparent;
+}
+.icono_wifi:after {
+  content: '';
+  position: absolute;
+  left: -9px;
+  top: -9px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px transparent;
+  border-bottom: solid 1px transparent;
+  border-left: solid 1px transparent;
+}
+/*
+  Descarga
+  <div class="icono_descarga"></div>
+*/
+.icono_descarga {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 12px;
+  width: 13px;
+  height: 4px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  border-top: none;
+}
+.icono_descarga:before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: -9px;
+  width: 1px;
+  height: 10px;
+  background-color: currentColor;
+}
+.icono_descarga:after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: -4px;
+  width: 4px;
+  height: 4px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+/*
+  Subida
+  <div class="icono_subida"></div>
+*/
+.icono_subida {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 12px;
+  width: 13px;
+  height: 4px;
+  border: solid 1px currentColor;
+  border-top: none;
+  border-radius: 1px;
+}
+.icono_subida:before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 6px;
+  width: 1px;
+  height: 9px;
+  background-color: currentColor;
+}
+.icono_subida:after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 4px;
+  width: 4px;
+  height: 4px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+/*
+  Apagar
+  <div class="icono_apagar"></div>
+*/
+.icono_apagar {
+  color: #000;
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 3px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+.icono_apagar:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: -2px;
+  width: 1px;
+  height: 8px;
+  border-left: solid 3px white;
+  border-right: solid 3px white;
+  background-color: currentColor;
+}
+/*
+  Adjunto
+  <div class="icono_adjunto"></div>
+*/
+.icono_adjunto {
+  color: #000;
+  position: absolute;
+  margin-left: 9px;
+  margin-top: 2px;
+  width: 6px;
+  height: 12px;
+  border-radius: 4px 4px 0 0;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.icono_adjunto:before {
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: -1px;
+  width: 4px;
+  height: 6px;
+  border-radius: 0 0 3px 3px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+.icono_adjunto:after {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  width: 2px;
+  height: 10px;
+  border-radius: 4px 4px 0 0;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+}
+/*
+  Refrescar
+  <div class="icono_refrescar"></div>
+*/
+.icono_refrescar {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 5px;
+  width: 13px;
+  height: 9px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+}
+.icono_refrescar:before {
+  content: '';
+  position: absolute;
+  left: -3px;
+  top: -2px;
+  width: 0;
+  height: 0;
+  border-top: solid 3px white;
+  border-bottom: solid 3px currentColor;
+  border-left: solid 3px white;
+  border-right: solid 3px white;
+}
+.icono_refrescar:after {
+  content: '';
+  position: absolute;
+  right: -3px;
+  bottom: -2px;
+  width: 0;
+  height: 0;
+  border-top: solid 3px currentColor;
+  border-bottom: solid 3px white;
+  border-left: solid 3px white;
+  border-right: solid 3px white;
+}
+/*
+  Justificar
+  <div class="icono_justificar"></div>
+*/
+.icono_justificar {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 17px;
+  height: 5px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+.icono_justificar:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 17px;
+  height: 5px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+/*
+  Alinear izquierda
+  <div class="icono_alinear-izquierda"></div>
+*/
+.icono_alinear-izquierda {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 17px;
+  height: 5px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+.icono_alinear-izquierda:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 11px;
+  height: 5px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+/*
+  Alinear centro
+  <div class="icono_alinear-centro"></div>
+*/
+.icono_alinear-centro {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 17px;
+  height: 5px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+.icono_alinear-centro:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  width: 11px;
+  height: 5px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+/*
+  Alinear derecha
+  <div class="icono_alinear-derecha"></div>
+*/
+.icono_alinear-derecha {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 17px;
+  height: 5px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+.icono_alinear-derecha:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: 0;
+  width: 11px;
+  height: 5px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+/*
+  Indetar
+  <div class="icono_indetar"></div>
+*/
+.icono_indetar {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 17px;
+  height: 8px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+.icono_indetar:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: 0;
+  width: 11px;
+  height: 2px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+.icono_indetar:after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  width: 0;
+  height: 0;
+  border-top: solid 3px transparent;
+  border-bottom: solid 3px transparent;
+  border-left: solid 3px currentColor;
+  border-right: solid 3px transparent;
+}
+/*
+  Desindetar
+  <div class="icono_desindetar"></div>
+*/
+.icono_desindetar {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 17px;
+  height: 8px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+.icono_desindetar:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: 0;
+  width: 11px;
+  height: 2px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+.icono_desindetar:after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: -3px;
+  width: 0;
+  height: 0;
+  border-top: solid 3px transparent;
+  border-bottom: solid 3px transparent;
+  border-left: solid 3px transparent;
+  border-right: solid 3px currentColor;
+}
+/*
+  Imagen
+  <div class="icono_imagen"></div>
+*/
+.icono_imagen {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+}
+.icono_imagen:before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+.icono_imagen:after {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 9px;
+  width: 12px;
+  height: 8px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}

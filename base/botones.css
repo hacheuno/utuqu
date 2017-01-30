@@ -1,0 +1,56 @@
+/*
+*   UTUQU - BOTONES
+*************************************************/
+
+
+/*
+  # TODO:
+  * Repensar el nombre de las clases que extienden .boton para que sean más semánticas
+*/
+
+.boton {
+    display: inline-block;
+    text-align: center;
+    line-height: 1em;
+    cursor: pointer;
+    -webkit-appearance: none;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    border-radius: 0;
+    padding: 1.2em 1.6em;
+    margin: 0 0 1rem 0;
+    font-size: .8em;
+    background-color: #333;
+    color: #FFFFFF;
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+}
+
+.boton:hover,
+.boton:active,
+.boton:focus {
+    opacity: .5;
+}
+
+.boton.secundario {
+    background-color: #DDD;
+    color: #333;
+}
+
+.boton.plano {
+    background-color: transparent;
+    color: inherit;
+}
+
+.boton.redondo {
+    width: 4rem;
+    height: 4rem;
+    /*
+      ## TODO:
+      * Investigar la manera de poner porcentajes aquí arriba
+    */
+    padding: 1rem;
+    border-radius: 50%;
+    /*background-color: #333;*/
+    color: #ffffff;
+}

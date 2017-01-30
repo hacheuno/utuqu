@@ -1,0 +1,356 @@
+/*
+*   UTUQU - UTILIDADES
+*************************************************/
+
+/*
+  ## TODO:
+  * Crear clases defensivas para los titulares y enlaces en los fondos
+  * Crear + clases de visibilidad con media queries (*-@peque, *-@medio y *-@grande)
+  * Crear clases para texto centrado/a la izq en tablets y movil.
+  * Crear utilidades para formularios; .campo-enlinea, .campo-comprimido etc...
+
+  * Vamos a pensar si implementar las utilidades como atributos puede ser una mejora o no:  (https://blog.codinghorror.com/html-validation-does-it-matter/)
+*/
+
+/* Visibilidad */
+.oculto                     { display: none; }
+.escondido                  { visibility: hidden; }
+.visible                    { visibility: visible; }
+.sin-foco                   { outline: 0; }
+
+
+/* Posicionamiento */
+.derecha                    { float: right; }
+
+.absoluto                   { position: absolute; }
+.relativo                   { position: relative; }
+.fijado                     { position: fixed; }
+.centrado                   { margin: 0 auto; }
+
+/* Texto */
+.texto-centrado             { text-align: center; }
+.texto-izquierda            { text-align: left; }
+.texto-derecha              { text-align: right; }
+.texto-justificado          { text-align: justify; }
+
+.texto-subrayado            { text-decoration: underline; }
+.texto-mayuscula            { text-transform: uppercase; }
+
+.texto-gordo                { font-weight: bolder; }
+.texto-fino                 { font-weight: lighter; }
+.texto-normal               { font-weight: normal; }
+
+.texto-cursiva              { font-family: cursive; }
+/*
+  ## TODO:
+  * Decidir si definimos fuentes en las clases siguientes:
+*/
+.texto-mono                 { font-family: monospace; }
+.texto-sin-serifa           { font-family: sans-serif; }
+.texto-serifa               { font-family: serif; }
+
+.texto-grande
+{
+  font-size: 120%;
+}
+
+.texto-peque {
+  font-size: 90%;
+}
+
+.texto-destacado
+{
+  font-size: 120%;
+  font-weight: lighter;
+}
+
+.texto-leyenda
+{
+  font-size: .9rem;
+  font-style: italic;
+  color: #777777;
+}
+
+.texto-negro                { color: #111111 }
+.texto-gris                 { color: #AAAAAA }
+.texto-gris-medio           { color: #777777 }
+.texto-gris-oscuro          { color: #333333 }
+.texto-plata                { color: #DDDDDD }
+.texto-blanco               { color: #FFFFFF }
+.texto-agua                 { color: #7FDBFF }
+.texto-azul                 { color: #0074D9 }
+.texto-marino               { color: #001F3F }
+.texto-turquesa             { color: #39CCCC }
+.texto-verde                { color: #2ECC40 }
+.texto-oliva                { color: #3D9970 }
+.texto-lima                 { color: #01FF70 }
+.texto-amarillo             { color: #FFDC00 }
+.texto-naranja              { color: #FF851B }
+.texto-rojo                 { color: #FF4136 }
+.texto-fucsia               { color: #F012BE }
+.texto-morado               { color: #B10DC9 }
+.texto-granate              { color: #85144B }
+
+/* Color */
+.apagado                    { opacity: .5 }
+.color-heredado             { color: inherit }
+
+/* Fondos */
+.fondo-negro                { background-color: #111111 }
+.fondo-gris                 { background-color: #AAAAAA }
+.fondo-gris--medio          { background-color: #777777 }
+.fondo-gris--oscuro         { background-color: #333333 }
+.fondo-plata                { background-color: #DDDDDD }
+.fondo-blanco               { background-color: #FFFFFF }
+
+.fondo-agua                 { background-color: #7FDBFF }
+.fondo-azul                 { background-color: #0074D9 }
+.fondo-marino               { background-color: #001F3F }
+.fondo-turquesa             { background-color: #39CCCC }
+.fondo-verde                { background-color: #2ECC40 }
+.fondo-oliva                { background-color: #3D9970 }
+.fondo-lima                 { background-color: #01FF70 }
+
+.fondo-amarillo             { background-color: #FFDC00 }
+.fondo-naranja              { background-color: #FF851B }
+.fondo-rojo                 { background-color: #FF4136 }
+.fondo-fucsia               { background-color: #F012BE }
+.fondo-morado               { background-color: #B10DC9 }
+.fondo-granate              { background-color: #85144B }
+
+.fondo-oscuro--1            { background-color: rgba(0,0,0,.0625) }
+.fondo-oscuro--2            { background-color: rgba(0,0,0,.125) }
+.fondo-oscuro--3            { background-color: rgba(0,0,0,.25) }
+.fondo-oscuro--4            { background-color: rgba(0,0,0,.5) }
+
+.fondo-claro--1             { background-color: rgba(255,255,255,.0625) }
+.fondo-claro--2             { background-color: rgba(255,255,255,.125) }
+.fondo-claro--3             { background-color: rgba(255,255,255,.25) }
+.fondo-claro--4             { background-color: rgba(255,255,255,.5) }
+
+/* Bordes */
+[class*=".borde--"]         { border: none }
+
+.borde                      { border: 1px solid #DDDDDD }
+.borde--2                   { border: 2px solid #DDDDDD }
+.borde--3                   { border: 3px solid #DDDDDD }
+.borde--4                   { border: 4px solid #DDDDDD }
+
+/*
+  ## TODO:
+  * Repensar si es adecuado usar --vertical y --horizontal de esta manera; crea confusión
+*/
+
+.borde--vertical-1
+{
+  border-top: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+}
+.borde--vertical-2
+{
+  border-top: 2px solid #DDDDDD;
+  border-bottom: 2px solid #DDDDDD;
+}
+.borde--vertical-3
+{
+  border-top: 3px solid #DDDDDD;
+  border-bottom: 3px solid #DDDDDD;
+}
+.borde--vertical-4
+{
+  border-top: 4px solid #DDDDDD;
+  border-bottom: 4px solid #DDDDDD;
+}
+
+.borde--horizontal-1
+{
+  border-left: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+}
+.borde--horizontal-2
+{
+  border-left: 2px solid #DDDDDD;
+  border-right: 2px solid #DDDDDD;
+}
+.borde--horizontal-3
+{
+  border-left: 3px solid #DDDDDD;
+  border-right: 3px solid #DDDDDD;
+}
+.borde--horizontal-4
+{
+  border-left: 4px solid #DDDDDD;
+  border-right: 4px solid #DDDDDD;
+}
+
+.borde--arriba-1            { border-top: 1px solid #DDDDDD }
+.borde--arriba-2            { border-top: 2px solid #DDDDDD }
+.borde--arriba-3            { border-top: 3px solid #DDDDDD }
+.borde--arriba-4            { border-top: 4px solid #DDDDDD }
+
+.borde--abajo-1             { border-bottom: 1px solid #DDDDDD }
+.borde--abajo-2             { border-bottom: 2px solid #DDDDDD }
+.borde--abajo-3             { border-bottom: 3px solid #DDDDDD }
+.borde--abajo-4             { border-bottom: 4px solid #DDDDDD }
+
+.borde--izquierda-1         { border-left: 1px solid #DDDDDD }
+.borde--izquierda-2         { border-left: 2px solid #DDDDDD }
+.borde--izquierda-3         { border-left: 3px solid #DDDDDD }
+.borde--izquierda-4         { border-left: 4px solid #DDDDDD }
+
+.borde--derecha-1           { border-right: 1px solid #DDDDDD }
+.borde--derecha-2           { border-right: 2px solid #DDDDDD }
+.borde--derecha-3           { border-right: 3px solid #DDDDDD }
+.borde--derecha-4           { border-right: 4px solid #DDDDDD }
+
+.sin-borde                  { border: none }
+.sin-borde--arriba          { border-top: none }
+.sin-borde--abajo           { border-bottom: none }
+.sin-borde--izquierda       { border-left: none }
+.sin-borde--derecha         { border-right: none }
+
+.borde-negro                { border-color: #111111 }
+.borde-gris                 { border-color: #AAAAAA }
+.borde-plata                { border-color: #DDDDDD }
+.borde-blanco               { border-color: #FFFFFF }
+.borde-agua                 { border-color: #7FDBFF }
+.borde-azul                 { border-color: #0074D9 }
+.borde-marino               { border-color: #001F3F }
+.borde-turquesa             { border-color: #39CCCC }
+.borde-verde                { border-color: #2ECC40 }
+.borde-oliva                { border-color: #3D9970 }
+.borde-lima                 { border-color: #01FF70 }
+.borde-amarillo             { border-color: #FFDC00 }
+.borde-naranja              { border-color: #FF851B }
+.borde-rojo                 { border-color: #FF4136 }
+.borde-fucsia               { border-color: #F012BE }
+.borde-morado               { border-color: #B10DC9 }
+.borde-granate              { border-color: #85144B }
+
+.borde-oscuro--1            { border-color: rgba(0,0,0,.0625) }
+.borde-oscuro--2            { border-color: rgba(0,0,0,.125) }
+.borde-oscuro--3            { border-color: rgba(0,0,0,.25) }
+.borde-oscuro--4            { border-color: rgba(0,0,0,.5) }
+
+.borde-claro--1             { border-color: rgba(255,255,255,.0625) }
+.borde-claro--2             { border-color: rgba(255,255,255,.125) }
+.borde-claro--3             { border-color: rgba(255,255,255,.25) }
+.borde-claro--4             { border-color: rgba(255,255,255,.5) }
+
+/* Márgenes */
+[class*=".margen--"]        { margin: 0 }
+
+.margen                     { margin: 1rem }
+.margen-2                   { margin: 2rem }
+.margen-3                   { margin: 3rem }
+.margen-4                   { margin: 4rem }
+
+.margen--vertical-1         { margin: 1rem 0 }
+.margen--vertical-2         { margin: 2rem 0 }
+.margen--vertical-3         { margin: 3rem 0 }
+.margen--vertical-4         { margin: 4rem 0 }
+
+.margen--horizontal-1       { margin: 1rem 0 }
+.margen--horizontal-2       { margin: 2rem 0 }
+.margen--horizontal-3       { margin: 3rem 0 }
+.margen--horizontal-4       { margin: 4rem 0 }
+
+.margen--arriba-1           { margin-top: 1rem }
+.margen--arriba-2           { margin-top: 2rem }
+.margen--arriba-3           { margin-top: 3rem }
+.margen--arriba-4           { margin-top: 4rem }
+
+.margen--abajo-1            { margin-top: 1rem }
+.margen--abajo-2            { margin-top: 2rem }
+.margen--abajo-3            { margin-top: 3rem }
+.margen--abajo-4            { margin-top: 4rem }
+
+.margen--izquierdo-1        { margin-top: 1rem }
+.margen--izquierdo-2        { margin-top: 2rem }
+.margen--izquierdo-3        { margin-top: 3rem }
+.margen--izquierdo-4        { margin-top: 4rem }
+
+.margen--derecho-1          { margin-top: 1rem }
+.margen--derecho-2          { margin-top: 2rem }
+.margen--derecho-3          { margin-top: 3rem }
+.margen--derecho-4          { margin-top: 4rem }
+
+.sin-margen                 { margin: 0 }
+.sin-margen--arriba         { margin-top: 0 }
+.sin-margen--abajo          { margin-bottom: 0 }
+.sin-margen--izquierdo      { margin-left: 0 }
+.sin-margen--derecho        { margin-right: 0 }
+
+/* Rellenos */
+[class*=".relleno--"]       { padding: 0 }
+
+.relleno                    { padding: 1rem }
+.relleno--2                 { padding: 2rem }
+.relleno--3                 { padding: 3rem }
+.relleno--4                 { padding: 4rem }
+
+.relleno--vertical-1        { padding: 1rem 0 }
+.relleno--vertical-2        { padding: 2rem 0 }
+.relleno--vertical-3        { padding: 3rem 0 }
+.relleno--vertical-4        { padding: 4rem 0 }
+
+.relleno--horizontal-1      { padding: 0 1rem }
+.relleno--horizontal-2      { padding: 0 2rem }
+.relleno--horizontal-3      { padding: 0 3rem }
+.relleno--horizontal-4      { padding: 0 4rem }
+
+.relleno--arriba-1          { padding-top: 1rem }
+.relleno--arriba-2          { padding-top: 2rem }
+.relleno--arriba-3          { padding-top: 3rem }
+.relleno--arriba-4          { padding-top: 4rem }
+
+.relleno--abajo-1           { padding-bottom: 1rem }
+.relleno--abajo-2           { padding-bottom: 2rem }
+.relleno--abajo-3           { padding-bottom: 3rem }
+.relleno--abajo-4           { padding-bottom: 4rem }
+
+.relleno--izquierdo-1       { padding-left: 1rem }
+.relleno--izquierdo-2       { padding-left: 2rem }
+.relleno--izquierdo-3       { padding-left: 3rem }
+.relleno--izquierdo-4       { padding-left: 4rem }
+
+.relleno--derecho-1         { padding-right: 1rem }
+.relleno--derecho-2         { padding-right: 2rem }
+.relleno--derecho-3         { padding-right: 3rem }
+.relleno--derecho-4         { padding-right: 4rem }
+
+.sin-relleno                { padding: 0 }
+.sin-relleno--arriba        { padding-top: 0 }
+.sin-relleno--abajo         { padding-bottom: 0 }
+.sin-relleno--izquierdo     { padding-left: 0 }
+.sin-relleno--derecho       { padding-right: 0 }
+
+/* Imagenes */
+.imagen-circular            { border-radius: 50% }
+
+.imagen-fondo--cubre        { background-size: cover }
+.imagen-fondo--contiene     { background-size: contain }
+.imagen-fondo--centrada     { background-position: center }
+.imagen-fondo--arriba       { background-position: top }
+.imagen-fondo--derecha      { background-position: right }
+.imagen-fondo--abajo        { background-position: bottom }
+.imagen-fondo--izquierda    { background-position: left }
+
+/* Alturas iguales */
+.alturas-iguales {
+  display: table;
+}
+
+.iguala {
+  float: none;
+  display: table-cell;
+}
+
+@media (max-width: 600px) {
+  .iguala {
+    float: left;
+    display: block;
+    border: none;
+    padding: 1rem 0;
+  }
+}

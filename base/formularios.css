@@ -1,0 +1,191 @@
+/*
+*   UTUQU - FORMULARIOS
+*************************************************/
+
+form button,
+form input,
+form optgroup,
+form select,
+form textarea {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+form fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+}
+
+form .grupo {
+    border: 1px solid #DDDDDD;
+    padding: 2.25rem;
+    margin-top: 1rem;
+}
+
+form legend {
+    font-size: 1.4rem;
+    font-weight: bold;
+    box-sizing: border-box;
+    color: inherit;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+    background: #fefefe;
+    padding: 0 0.5875rem;
+    margin-left: -0.1875rem;
+}
+
+form label {
+    display: inline-block;
+    margin: 0;
+    vertical-align: baseline;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="datalist"],
+form input[type="date"],
+form input[type="datetime"],
+form input[type="datetime-local"],
+form input[type="month"],
+form input[type="week"],
+form input[type="email"],
+form input[type="number"],
+form input[type="search"],
+form input[type="tel"],
+form input[type="time"],
+form input[type="url"],
+form input[type="color"],
+form textarea {
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #DDDDDD;
+  margin: 0 0 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.2em;
+  color: inherit;
+  background-color: #FFFFFF;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+form input::-webkit-calendar-picker-indicator {
+  /* Quita la flecha de los datalist en WebKit */
+  display: none;
+}
+
+form input[type="datalist"] {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 3224'><polygon points='0,0 32,0 16,24' style='fill: rgb%28138, 138, 138%29'></polygon></svg>");
+    -webkit-background-size: 9px 6px;
+    background-size: 9px 6px;
+    background-position: right -.5rem center;
+    -webkit-background-origin: content-box;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    padding-right: 1.5rem;
+}
+
+form input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    outline-offset: -2px;
+}
+
+form input[type="search"]::-webkit-search-decoration,
+form input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+form input[type="number"]::-webkit-inner-spin-button,
+form input[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+form input[type="checkbox"],
+form input[type="radio"] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+form input[type="checkbox"]+label,
+form input[type="radio"]+label {
+    display: inline-block;
+    margin: .5rem;
+    vertical-align: baseline;
+}
+
+form textarea {
+    padding: 0.5rem;
+    border: 1px solid #DDDDDD;
+    margin: 0 0 1rem;
+    font-size: 1.3rem;
+    font-family: inherit;
+    line-height: normal;
+    border-radius: 0;
+    overflow: auto;
+}
+
+form select {
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid #DDDDDD;
+    margin: 0 0 1rem;
+    font-size: 1rem;
+    font-family: inherit;
+    line-height: 1.2em;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 3224'><polygon points='0,0 32,0 16,24' style='fill: rgb%28138, 138, 138%29'></polygon></svg>");
+    -webkit-background-size: 9px 6px;
+    background-size: 9px 6px;
+    background-position: right -.5rem center;
+    -webkit-background-origin: content-box;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    padding-right: 1.5rem;
+    text-transform: none;
+}
+
+form button {
+    overflow: visible;
+    text-transform: none;
+}
+
+form button,
+form input[type="button"],
+form input[type="reset"],
+form input[type="submit"] {
+    -webkit-appearance: button;
+}
+
+form button::-moz-focus-inner,
+form input[type="button"]::-moz-focus-inner,
+form input[type="reset"]::-moz-focus-inner,
+form input[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+form input[hidden] {
+    display: none;
+}
+
+form .leyenda {
+  font-size: .9rem;
+  font-style: italic;
+  color: #777777;
+  margin-top: -1rem;
+  text-align: right;
+}

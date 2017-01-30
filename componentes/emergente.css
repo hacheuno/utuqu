@@ -1,0 +1,50 @@
+/*
+*   UTUQU - EMERGENTE
+*************************************************/
+
+.emergente {
+  position: static;
+}
+.emergente_contenido
+{
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  background: #FFF;
+  width: 800px;
+  margin-left: -400px;
+  padding:  2rem;
+  z-index: 99;
+  box-shadow: 0 0 50px #777;
+  z-index: 999999;
+}
+@media (max-width: 800px) {
+  .emergente_contenido
+  {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #FFF;
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+  }
+}
+
+.emergente_cierra
+{
+  color: #777;
+  float: right;
+  cursor: pointer;
+}
+.emergente_cierra:hover
+{
+  color: #999;
+}
+
+.emergente_abre:focus + .emergente_contenido
+{
+	display: block;
+  overflow-y: auto;
+}

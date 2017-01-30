@@ -1,0 +1,54 @@
+/*
+*   UTUQU - DESPLEGABLE
+*************************************************/
+
+.desplegable
+{
+  position: relative;
+  display: inline-block;
+}
+
+.desplegable_contenido
+{
+  display: none;
+  position: absolute;
+  top: 3rem;
+  left: -16px;
+  background: #DDD;
+  width: 200px;
+  z-index: 10;
+}
+
+.desplegable_contenido > .desplegable_item
+{
+  width: 100%;
+  display: block;
+}
+.desplegable_contenido > .desplegable_item a
+{
+  display: block;
+  padding: 2em;
+  font-size: 1em;
+  color: #777;
+  border: none;
+}
+.desplegable_contenido > .desplegable_item a:hover
+{
+  color: #111;
+}
+
+.desplegable_abre
+{
+  padding-right: 2.5rem;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 3224'><polygon points='0,0 32,0 16,24' style='fill: rgb%28138, 138, 138%29'></polygon></svg>");
+  -webkit-background-size: 9px 6px;
+  background-size: 9px 6px;
+  background-position: right -1.5rem center;
+  -webkit-background-origin: content-box;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+}
+.desplegable_abre:focus + .desplegable_contenido
+{
+	display: block;
+}
