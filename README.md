@@ -1,36 +1,34 @@
 UTUQU
 -----
-Utuqu es una librería para desarrollo frontend, gratuita y libre bajo licencia LGNU/GPL3. El objetivo es una base sólida que permita empezar un proyecto web con lo mínimo imprecindible. Además Utuqu incluye módulos opcionales que ofrecen patrones comunes para el desarrollo rápido de aplicaciones y prototipos.
+Utuqu es una librería CSS para desarrollo web, gratuita y libre bajo licencia HSÑ (Haz lo que te salga de la ñocla). La idea detras de Utuqu sigue la metodología CPPM (Currar Poco Procratinar Mucho) para que tu jefe o tus clientes te dejen dedicarte a lo realmente importante.
 
-El objetivo es crear una caja de herramienta versatil para uso personal, aunque estás invitado a usarla y colaborar con tus propias aportaciones.
+Esta librería parte de algunos prejuicios fuertemente enraizados en nuestras vidas de desarrolladores web:
 
-Esta librería parte de algunas ideas preconcebidas de como debe ser una biblitoteca para el desarrollo de frontal de aplicaciones:
-
-  * Solo usamos clases, para reducir la aparición de problemas de especificidad. ID = poblemas.
-  * Clases documentadas en la hoja de estilos, para que el código se explique a sí mismo.
-  * Los enlaces los subrallamos para que parezcan enlaces
-  * Los ni los componentes ni los elementos tienen color, unícamente aquellos que lo necesiten por su idiosincrasia (ej. botones...)
+  * Solo usamos clases, para reducir la aparición de _poblemas_ de especificidad. ID = poblemas
+  * Documentación en la propia hoja de estilos, a menudo de forma incompleta o inutil
+  * Los enlaces los subrallamos para que parezcan enlaces. Toma, castaña
+  * Estamos un poquito saturaditos de tanto freimuorc de JavaScript. Hoy no juegas ECMA
+  * Solo viene con las las patatas, el bonito lo pones tú
 
 ### Características
-Utuqu es una librería creada priorizando el desarrollo partiendo de la vista para pantallas estrechas y tiene como principal característica el uso de propiedades personalizadas que, aunque carece de soporte en el 100% de navegadores, brinda la posibilidad de configurar los ajustes globales en un solo sitio, algo común en algunos preprocesadores.
+Desengañate, esa web tan chula que has diseñado solo la veran tu cliente, su pareja y la tuya. El resto de los mortales verán un _churro pabajo_ en las pantallas de sus móviles. Utuqu genera ese _churro pabajo_ de forma automática permitiendote, pequeño padawai, pasarte el desarrollo mobile-first y toda esa mandanga por el arco del triunfo. A procrastinar se ha dicho.
 
-Otra de sus características es que tanto la documentación como las clases que lo componen están escritas en castellano, la segunda lengua más hablada del mundo. Esto facilita el trabajo y el aprendizaje a aquellas personas hispano-parlantes que prefieren usar su lengua materna.
+Otra de sus características es que tanto la documentación como las clases que lo componen están escritas en casteplano, la segunda lengua más hablada del mundo mundial. Y no es que nos importe mucho pero con tal de bajarles los humos a los angloparlantes, lo que sea oiga. Utuqu facilita el trabajo y el aprendizaje a aquellas personas hispano-parlantes que prefieren usar su lengua materna para picar código, y luchar así contra la colonización cultural de los descendientes de la pérfida albión.
 
-Utuqu está escrita adaptando filosofias como BEM, ACSS u OOCSS para generar un entorno de trabajo flexible y modular, que permita escojer para cada proyecto solo los componentes o características necesarios, sin sobrecargarlo de código sin uso.
+Utuqu está escrita adaptando filosofias como BEM, para minimizar la aparición episodios del tipo EstoQueLechesHaceAqui o PaQueNaricesServiraEsto.
 
-Para reducir al mínimo el uso las dependencias, Utuqu está construido sin preprocesadores, herramientas de linea de comandos ni otras tencnologias aparte de CSS y HTML.
+Para ganar tiempo de procrastinación, Utuqu está construido sin preprocesadores, herramientas de linea de comandos ni otras tencnologias que te mantienen la mitad del tiempo leyendo manuales e instalando paquetitos y la otra mitad averiguando porque a tí no te funciona.
 
-Para facilitar el uso modular de los componentes y características de Utuqu, se ha dividido en varias partes:
+Como Utuqu ha acabado teniendo muchos archivos ha habido que meterlos en carpetas porque si no era un lio tremendo:
 
  * __Base:__ contiene las características básicas; ajustes globales, cuadrícula, estilos básicos de texto, formularios y una biblioteca de utilidades.
 
- * __Componentes:__ aquí se encuentran componentes con funcionalidades completas, como los menús, la barra superior o el carrusel en CSS puro. Estós componentes están pensados para que podamos crear nuestros propios módulos.
+ * __Componentes:__ aquí se encuentran componentes con funcionalidades completas, como los menús, la barra superior, las pestñas o los desplegables.
 
- * __Módulos:__ está carpeta está vacia por defecto, y tiene como objetivo servir de biblioteca personal de aquellos módulos que generemos a partir de los componentes antes mencionados.
+ * __Módulos:__ está carpeta está vacia por defecto, para que guardes las plantillicas que te vayas haciendo.
 
  * __Extensiones:__ contiene extras provenientes de otras librerías de código abierto; una biblioteca de filtros CSS para imágenes o Animate CSS entre otras.
 
- ## Por hacer
- Cosas se quieren añadir a la bliblioteca:
- - Pestañas-acordeon como las de Foundation 6.3, en CSS puro
+ ## Próximos capítulos
+ - Pestañas-acordeon como las de Foundation 6.3, en CSS
  - Imagen de cabecera en pantalla completa

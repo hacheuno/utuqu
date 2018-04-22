@@ -53,31 +53,8 @@
 /*  ESTILOS PERSONALIZADOS
     Inserta los estilos específicos de tu proyecto
 ***************************************************/
-
-body {
-  background-color: #EFEFEF;
-}
-
 section {
-  background-color: #FFF;
-  border: 1px solid #CCC;
-  margin-bottom: 2rem !important;
-  padding: 2rem;
-}
-@media (max-width: 1200px) {
-  section {
-    margin-bottom: 0 !important;
-    border: none;
-    border-bottom: 1px solid #CCC;
-  }
-}
-
-section section {
-  background-color: inherit;
-  border: none;
-  margin-bottom: 0 !important;
-  padding: 0;
-  box-shadow: none;
+  padding-bottom: 3rem;  
 }
 
 .muestra-columna {

@@ -49,8 +49,16 @@
     </nav>
     <!-- <div class="navegacion_espaciador"></div> -->
 
+    <section class="escaparate">
+      <div class="escaparate_seccion">
+        <div class="escaparate_bloque">
+          <h1 class="escaparate_titulo">UTUQU</h1>
+          <p class="escaparate_parrafo">Librería CSS para desarrollo web. Así, sin más.</p>
+        </div>
+      </div>
+    </section>
+
     <div id="contenido" class="sin-foco" tabindex="-1">
-      
 
       <!-- CUADRÍCULA -->
 
@@ -66,9 +74,6 @@
           </p>
           <p>
             Usa la clase <code>.fila</code> para crear una division horizontal y anida tantas <code>.peque-*</code> como columnas necesites. Agrega <code>.medio-*</code> o <code>.grande-*</code> para definir el tamaño en pantallas de mayores dimensiones.
-          </p>
-          <p>
-            Para conseguir columnas sin espacio de separación entre ellas, agrega <code>.sin-medianil</code> al elemento <code>.fila</code>.
           </p>
         </div>
 
@@ -129,7 +134,9 @@
         <div class="peque-12">
           <h4>Cuadrícula sin medianil</h4>
           <p>
-            En ocasiones podemos necesitar que nuestra estructura carezca de espacios intermedios, para eso tenemos la clase <code>.sin-medianil</code> que se debe aplicar como complemento de <code>.fila</code>.
+            En ocasiones podemos necesitar que nuestra estructura carezca de
+            espacios intermedios, para eso tenemos la clase <code>.sin-medianil</code>
+            que se debe aplicar como complemento de <code>.fila</code>.
           </p>
         </div>
 
@@ -143,7 +150,10 @@
         <div class="peque-12">
           <h4>Alternar columnas</h4>
           <p>
-            Para crear una columna centrada usaremos <code>.columna-centrada</code> junto a una clase <code>.medio-*</code> (o equivalente) menor de 12.
+            Podemos mover columnas de sitio dentro de una <code>.fila</code>
+            usando la utilidad <code>.derecha</code> que hará que el elemento
+            flote a la derecha desplazando a la izquierda a los demás dentro de
+            esa fila.
           </p>
         </div>
 
@@ -158,36 +168,35 @@
         <div class="peque-12">
           <h4>Centrar columnas</h4>
           <p>
-            Para crear una columna centrada usaremos <code>.columna-centrada</code> junto a una clase <code>.medio-*</code> (o equivalente) menor de 12.
+            Para crear una columna centrada usaremos <code>.columna-centrada</code>
+             a una clase <code>.medio-*</code> menor de 12.
           </p>
 
-          <section class="fila fondo-plata">
+          <div class="fila">
             <div class="medio-3 columna-centrada">
               <span class="muestra-columna">.medio-3 .columna-centrada</span>
             </div>
-          </section>
+          </div>
         </div>
 
         <!-- CUADRÍCULA AUTOMÁTICA -->
         <div class="peque-12">
           <h4>Cuadrícula automática</h4>
           <p>
-            Esta rejilla escala desde cuatro o tres columnas, de anchura igual, en pantallas grandes a dos columnas en las pantallas más pequeñas. Para crear rejillas automáticas usamreos las clases <code>.auto-cuartos</code> o <code>.auto-tercios</code> para envolver un grupo de elementos <code>.auto-item</code>.
+            Esta rejilla escala a dos columnas en móviles, tres columnas en tablets
+            y monitores antiguos y en cuatro en pantallas grandes. Usaremos la
+            clase <code>.auto-cuadricula</code> para envolver un grupo de elementos
+            con la clase <code>.auto-item</code>.
           </p>
         </div>
 
-        <section class="auto-cuartos">
+        <section class="auto-cuadricula">
           <div class="auto-item"><img src="http://placehold.it/350x350" alt="Bloque Automático"></div>
           <div class="auto-item"><img src="http://placehold.it/350x350" alt="Bloque Automático"></div>
           <div class="auto-item"><img src="http://placehold.it/350x350" alt="Bloque Automático"></div>
           <div class="auto-item"><img src="http://placehold.it/350x350" alt="Bloque Automático"></div>
           <div class="auto-item"><img src="http://placehold.it/350x350" alt="Bloque Automático"></div>
           <div class="auto-item"><img src="http://placehold.it/350x350" alt="Bloque Automático"></div>
-          <div class="auto-item"><img src="http://placehold.it/350x350" alt="Bloque Automático"></div>
-          <div class="auto-item"><img src="http://placehold.it/350x350" alt="Bloque Automático"></div>
-        </section>
-
-        <section class="auto-tercios">
           <div class="auto-item"><img src="http://placehold.it/350x350" alt="Bloque Automático"></div>
           <div class="auto-item"><img src="http://placehold.it/350x350" alt="Bloque Automático"></div>
           <div class="auto-item"><img src="http://placehold.it/350x350" alt="Bloque Automático"></div>
@@ -200,18 +209,13 @@
         <div class="peque-12">
           <h5>Muestra</h5>
           <pre><code>
-  &lt;section class=&quot;auto-cuartos&quot;&gt;
+  &lt;section class=&quot;auto-cuadricula&quot;&gt;
     &lt;div class=&quot;auto-item&quot;&gt;&lt;img src=&quot;http://placehold.it/350x350&quot; alt=&quot;Bloque Autom&aacute;tico&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;auto-item&quot;&gt;&lt;img src=&quot;http://placehold.it/350x350&quot; alt=&quot;Bloque Autom&aacute;tico&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;auto-item&quot;&gt;&lt;img src=&quot;http://placehold.it/350x350&quot; alt=&quot;Bloque Autom&aacute;tico&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;auto-item&quot;&gt;&lt;img src=&quot;http://placehold.it/350x350&quot; alt=&quot;Bloque Autom&aacute;tico&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;auto-item&quot;&gt;&lt;img src=&quot;http://placehold.it/350x350&quot; alt=&quot;Bloque Autom&aacute;tico&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;auto-item&quot;&gt;&lt;img src=&quot;http://placehold.it/350x350&quot; alt=&quot;Bloque Autom&aacute;tico&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;auto-item&quot;&gt;&lt;img src=&quot;http://placehold.it/350x350&quot; alt=&quot;Bloque Autom&aacute;tico&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;auto-item&quot;&gt;&lt;img src=&quot;http://placehold.it/350x350&quot; alt=&quot;Bloque Autom&aacute;tico&quot;&gt;&lt;/div&gt;
-  &lt;/section&gt;
-
-  &lt;section class=&quot;auto-tercios&quot;&gt;
     &lt;div class=&quot;auto-item&quot;&gt;&lt;img src=&quot;http://placehold.it/350x350&quot; alt=&quot;Bloque Autom&aacute;tico&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;auto-item&quot;&gt;&lt;img src=&quot;http://placehold.it/350x350&quot; alt=&quot;Bloque Autom&aacute;tico&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;auto-item&quot;&gt;&lt;img src=&quot;http://placehold.it/350x350&quot; alt=&quot;Bloque Autom&aacute;tico&quot;&gt;&lt;/div&gt;
@@ -292,14 +296,9 @@
               <td>Elimina los espacios entre divisiones verticales.</td>
             </tr>
             <tr>
-              <th>.auto-cuartos</th>
+              <th>.auto-cuadricula</th>
               <td>todos</td>
-              <td>Crea una rejilla de un número de elementos multiplo de cuatro, que se adapta al tamaño de la ventana.</td>
-            </tr>
-            <tr>
-              <th>.auto-tercios</th>
-              <td>todos</td>
-              <td>Crea una rejilla de un número de elementos multiplo de tres, que se adapta al tamaño de la ventana.</td>
+              <td>Crea una rejilla de un número de elementos multiplo de cuatro y tres segun la resolución de pantalla.</td>
             </tr>
             <tr>
               <th>.auto-item</th>
@@ -335,9 +334,8 @@
         </header>
         <div class="peque-12">
           <p>
-            La paleta de colores que proporciona Utuqu se puede usar en fondos, bordes, texto y botones. Las clases están definidas en el apartado <i>Utilidades</i>.
+            La paleta de colores que proporciona Utuqu se puede usar en fondos, bordes, texto y botones.
           </p>
-          <p><a href="#0">Lista completa de utilidades de color</a></p>
         </div>
 
         <div class="peque-12 medio-2"><div class="muestra-color fondo-negro"></div></div>
@@ -358,6 +356,10 @@
         <div class="peque-12 medio-2"><div class="muestra-color fondo-rojo"></div></div>
         <div class="peque-12 medio-2"><div class="muestra-color fondo-naranja"></div></div>
         <div class="peque-12 medio-2"><div class="muestra-color fondo-amarillo"></div></div>
+
+        <div class="peque-12">
+          <p><a href="#0">Lista completa de utilidades de color</a></p>
+        </div>
       </section>
 
 
