@@ -2,14 +2,53 @@
 *   UTUQU - GLOBALES
 *************************************************/
 
-/* NOTE: ¿Tiene sentido tener los estilos repetidos aquí y en texto.css? */
+/*  CONFIGURACIÓN
+
+    Propiedades personalizadas donde podemos
+    definir valores globales para reutilizar.
+
+    Debido a la falta de soporte en algunos
+    navegadores y para conservar la compatibilidad
+    y la portabilidad de los componentes, de momento
+    Utuqu depende de una regla defensiva.
+
+*************************************************/
+
+:root {
+    --anchura-maxima: 1200px;
+    --relleno-columnas: 1rem;
+    --relleno-columnas-negativo: -1rem;
+    --fuente-primaria: 'Roboto', sans-serif;
+    --color-primario: #333333;
+    --color-secundario: #DDDDDD;
+    --color-negativo: #FF4136;
+    --color-positivo: #3D9970;
+    --color-informativo: #0074D9;
+    --color-parrafo: #333333;
+    --color-titulares: #333333;
+    --color-texto-negativo: #FFFFFF;
+    --color-invertido-titulares: #FFFFFF;
+}
+
+/*
+    NOTE:
+    Mover esta config a un archivo separado?
+*/
+
+
+/*  PREAJUSTE
+
+    Aquí redefinimos el comportamiento por defecto del
+    navegador y preajustamos los valores más comunes.
+
+*************************************************/
 
 html {
     width: 100%;
     height: 100%;
     font-size: 16px;
     line-height: 24px;
-    color: #333;
+    color: var(--color-primario);
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
@@ -17,7 +56,8 @@ html {
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: var(--fuente-primaria);
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
@@ -32,32 +72,66 @@ article, aside, footer, header, nav, section {
     display: block;
 }
 
+h1, h2, h3, h4, h5 {
+    font-weight: bolder;
+    font-size: inherit;
+    color: inherit;
+}
+
 h1, h2, h3, h4, h5, h6, p, blockquote, figure, ol, ul {
     margin: 0;
     padding: 0;
+}
+
+p {
+
+}
+
+a, b, i, strong, em, small, code {
+    line-height: 0;
 }
 
 figcaption, figure, main {
     display: block;
 }
 
+code, kbd, samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+
+/* IMÁGENES */
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    border: 0;
+    border-style: none;
+}
+
+
+/* ENLACES */
+
 a {
     text-decoration: none;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
+    color: #000;
+    border-bottom: 1px solid #333;
+    border-bottom: 1px solid var(--color-primario);
 }
 
 a:active, a:hover {
     outline-width: 0;
-}
-
-a, button {
-    color: inherit;
+    border-bottom: none;
 }
 
 button {
     overflow: visible;
     border: 0;
+    color: inherit;
     font: inherit;
     -webkit-font-smoothing: inherit;
     letter-spacing: inherit;
@@ -70,13 +144,81 @@ button {
     border: 0;
 }
 
-img {
-    max-width: 100%;
-    display: block;
-    height: auto;
-    border: 0;
-    border-style: none;
+
+/* LISTAS */
+
+ul, ol {
+    list-style: none;
+    margin-left: .5rem;
+    margin-bottom: 1rem;
 }
+
+
+/* PARRAFOS */
+
+p {
+    margin-bottom: 1rem;
+}
+
+
+/* CÓDIGO */
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+    margin: 0;
+}
+
+pre code {
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+p code {
+    padding: 0 .5rem;
+}
+
+
+/* ÍNDICES */
+
+sup {
+    top: -0.5rem;
+    left: .1rem;
+}
+
+sub {
+    bottom: -0.25em;
+    left: .1em;
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+
+/* ÉNFASIS */
+
+strong {
+    font-weight: bold;
+}
+
+blockquote {
+    display: block;
+    font-style: italic;
+    font-size: 120%;
+    padding: 1.5rem 3rem;
+    margin: 0 3rem 2rem 3rem;
+    color: #777;
+    border-left: 3px solid #777;
+}
+
+
+/*  MISCELANEA */
 
 hr {
     height: 0;
@@ -89,32 +231,6 @@ hr {
     overflow: visible;
 }
 
-pre {
-    font-family: monospace, monospace;
-    font-size: 1em;
-    margin: 0;
-}
-
-code, kbd, samp {
-    font-family: monospace, monospace;
-    font-size: 1em;
-}
-
 small {
     font-size: 80%;
-}
-
-sub, sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-}
-
-sub {
-    bottom: -0.25em;
-}
-
-sup {
-    top: -0.5em;
 }
