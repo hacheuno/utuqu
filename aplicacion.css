@@ -1,21 +1,25 @@
 /*
-*   UTUQU
-*   -----
-*   Esta hoja de estilo contiene las importaciones,
-*   la configuración global y los estilos personalizados
-*   de la aplicación.
+*  UTUQU 0.2.2
+*  Autor: Hector Asencio
+*/
+
+/*
+*  LICENCIA HAZ LO QUE TE SALGA DE LA ÑOCLA
+*  Version 1, Abril 2018
+*  Copyright (C) 2018 Hector Asencio <cranca@gmail.com>
 *
-*   Versión: 0.2.0
-*   Autor: @hectorasencio
-*	  Licencia: LGNU/GPL3
+*  Se permite la copia y modificación de esta licencia siempre y cuando la copies o la modifiques.
+*  El uso de esta licencia queda restringida a teclados con ñ.
 *
+*  CONDICIONES DE USO DE LA LICENCIA HAZ LO QUE TE SALGA DE LA ÑOCLA
+*
+*    0. Sencillamente, haz lo que te salga de la ñocla
 */
 
 /*  IMPORTACIONES
-
     En esta sección se enlazan todos los elementos
     que componen Utuqu. Comenta aquellos que no
-    necesites o añade tus propios elementos aqui.
+    necesites o añade tus propios elementos aquí.
 *********************************************************/
 
 @import "base/globales.css";
@@ -27,6 +31,7 @@
 @import "base/utilidades.css";
 @import "base/formularios.css";
 @import "componentes/navegacion.css";
+@import "componentes/escaparate.css";
 @import "componentes/desplegable.css";
 @import "componentes/emergente.css";
 @import "componentes/acordeon.css";
@@ -35,50 +40,19 @@
 /*@import "componentes/paneles.css"; Pendiente de implementar */
 /*@import "componentes/carrusel.css"; Pendiente de implementar */
 /*@import "componentes/reproductor.css"; Pendiente de implementar */
-/*@import "extensiones/iconos.css"; Pendiente de factorizar */
+/*@import "extensiones/iconos.css"; Pendiente de refactorizar */
 /*@import "extensiones/filtros.css"; Pendiente de traducir */
 
-
-/*  CONFIGURACIÓN
-
-    Propiedades personalizadas donde podemos
-    definir valores globales para reutilizar.
-
-    Debido a la falta de soporte en algunos
-    navegadores y para conservar la compatibilidad
-    y la portabilidad de los componentes, de momento
-    Utuqu no usa propiedades personalizadas en su
-    código.
-
-    Si estás segura de que tus usuarios utilizan
-    navegadores compatibles, descomenta el bloque
-    y actualiza las propiedades correspondientes
-    para que encajen con tus estilos
-
-*************************************************/
-
-:root {
-    --anchura-maxima: 1200px;
-    --relleno-columnas: 1rem;
-    --relleno-columnas-negativo: -1rem;
-    --fuente-primaria: 'Roboto', sans-serif;
-    --color-primario: #333333;
-    --color-secundario: #DDDDDD;
-    --color-negativo: #FF4136;
-    --color-positivo: #3D9970;
-    --color-informativo: #0074D9;
-    --color-parrafo: #333333;
-    --color-titulares: #333333;
-    --color-invertido-parrafo: #FFFFFF;
-    --color-invertido-titulares: #FFFFFF;
-}
+/*
+    TODO:
+    Pasar estas peticiones a un gulpfile para que
+    saque un solo archivo
+ */
 
 
 /*  ESTILOS PERSONALIZADOS
-
-    Inserta en está sección los reajustes y
-    estilos relativos a tu proyecto
-*************************************************/
+    Inserta los estilos específicos de tu proyecto
+***************************************************/
 
 body {
   background-color: #EFEFEF;
@@ -90,15 +64,6 @@ section {
   margin-bottom: 2rem !important;
   padding: 2rem;
 }
-
-section section {
-  background-color: inherit;
-  border: none;
-  margin-bottom: 0 !important;
-  padding: 0;
-}
-
-
 @media (max-width: 1200px) {
   section {
     margin-bottom: 0 !important;
@@ -108,42 +73,23 @@ section section {
 }
 
 section section {
+  background-color: inherit;
   border: none;
+  margin-bottom: 0 !important;
+  padding: 0;
   box-shadow: none;
 }
 
-.navegacion-demo {
-    position: fixed;
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #111;
-    content: "";
-    display: table;
-    clear: both;
-    z-index: 999;
-}
-
-.navegacion-demo a {
-border: none;
-text-decoration: none;
-}
-
-.navegacion-demo li {
-list-style-type: none;
-}
-
 .muestra-columna {
-    display: block;
-    background: #333;
-    color: #FFF;
-    padding: .5rem;
-    font-size: .8em;
+  display: block;
+  background: #333;
+  color: #FFF;
+  padding: .5rem;
+  font-size: .8em;
 }
 
 .muestra-color {
-    display: block;
-    min-width: 100%;
-    height: 177px;
+  display: block;
+  min-width: 100%;
+  height: 177px;
 }
