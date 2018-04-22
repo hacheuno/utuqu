@@ -2,27 +2,6 @@
 *   UTUQU - TEXTO
 *************************************************/
 
-/*
-  TODO:
-  * Crear estilos para listas de definición
-*/
-
-/* COMUNES */
-
-h1, h2, h3, h4, h5 {
-    font-weight: bolder;
-    font-size: inherit;
-    color: inherit;
-}
-
-p, ul, ol { /* ¿No sería mejor darle este valor a cada elemento? */
-    margin-bottom: 1em;
-}
-
-a, b, i, strong, em, small, code {
-    line-height: 0;
-}
-
 /* TITULARES */
 
 h1 {
@@ -55,35 +34,20 @@ h5 {
     margin-bottom: 0;
 }
 
-/* ENLACES */
-
-a {
-    border-bottom: 1px solid #333;
-}
-
-a:hover, a:active, a:focus {
-    border-bottom: none;
-    color: #777;
-}
 
 /* LISTAS */
 
-ul {
-    margin-left: 1rem;
+.lista-decorada {
+  padding-left: 1rem;
+  margin-left: .5rem;
 }
 
-ol {
-    margin-left: 1rem;
-    list-style-type: decimal;
+ul.lista-decorada {
+  list-style: disc;
 }
 
-ul ul, ol ol, ul ol, ol ul {
-    margin-top: 0em;
-    margin-bottom: 0em;
-}
-
-.lista-pelada {
-  list-style: none;
+ol.lista-decorada {
+  list-style: decimal;
 }
 
 .lista-horizontal {
@@ -95,39 +59,12 @@ ul ul, ol ol, ul ol, ol ul {
   margin-right: 1rem;
 }
 
-/* ÉNFASIS */
 
-strong {
-    font-weight: bold;
-}
+/*
+    TODO:
+    * Crear estilos para listas de definición
+*/
 
-blockquote {
-    display: block;
-    font-style: italic;
-    font-size: 120%;
-    padding: 1.5rem 3rem;
-    margin: 0 3rem 2rem 3rem;
-    color: #777;
-    border-left: 3px solid #777;
-}
-
-/* ÍNDICES */
-
-sub, sup {
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-}
-
-sup {
-    top: -0.5em;
-    left: .1em;
-}
-
-sub {
-    bottom: -0.25em;
-    left: .1em;
-}
 
 /* CÓDIGO */
 
@@ -142,16 +79,4 @@ pre {
 code {
     color: #777;
     background-color: #EFEFEF;
-    border: 1px solid #CCCCCC;
-}
-
-pre code {
-    border: none;
-    background-color: transparent;
-    margin: 0;
-    padding: 0;
-}
-
-p code {
-    padding: 0 .5rem;
 }
