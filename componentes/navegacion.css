@@ -1,190 +1,160 @@
 /*
-*   UTUQU - NAVEGACIÓN
-*************************************************
-
-  ## TODO:
-  * Integrar una clase `.navegacion_izquierda` para que funcione en el menu en vista móvil
-  * Buscar la manera de alinear los iconos para poder eliminar la clase `.navegacion_extra`
-  * Implementar control de cierre en el sub-menú en vista móvil
-  * Crear opciones con diferentes elementos (busqueda, login...)
-  * Fallback para las imágenes .svg en IE/Edge
-
-  ## REFERENCIAS
-  https://www.sitepoint.com/pure-css-off-screen-navigation-menu/
-  http://tympanus.net/codrops/2012/12/17/css-click-events/
-  https://www.thecssninja.com/css/css-tree-menu
-  https://gist.github.com/colynb/1508781
-  http://www.lenli.com/web-development/checkbox-err-radio-button-hack/
-  https://cferdinandi.github.io/kraken/components.html#visibility
-
-*/
+*  UTUQU - NAVEGACIÓN
+*  Una barra de navegación para Utuqu con
+*  panel lateral en pantallas pequeñas
+**************************************************/
 
 body {
     overflow-x: hidden;
 }
 
 .navegacion {
+    position: relative;
     width: 100%;
-    background: #111;
+    background-color: #333;
+    background-color: var(--color-primario);
     content: "";
     display: table;
     clear: both;
     z-index: 999;
 }
 
-.navegacion a { /* Cuidador, esto se rompe cuando cambiamos la clase superior! */
-    border: none;
-    text-decoration: none;
-}
-
-.navegacion li { /* Cuidador, esto se rompe cuando cambiamos la clase superior! */
-    list-style-type: none;
-}
-
-.navegacion_espaciador {
-    height: 7rem;
-}
-
-@media (max-width: 1200px) {
-  .navegacion_espaciador {
-      height: 4rem;
-  }
-}
-
-.navegacion_derecha {
-    float: right;
-}
 
 .navegacion_nombre {
     float: left;
     margin-right: 1.5rem;
     display: block;
     padding: 1.65em 1em;
-    color: #DDDDDD;
+    color: #FFF;
+    color: var(--color-texto-negativo);
     font-size: 1.2em;
     font-weight: 900;
+    text-transform: uppercase;
 }
+
+
+.navegacion_espaciador {
+    height: 7rem;
+}
+@media (max-width: 1200px) {
+  .navegacion_espaciador {
+      height: 4rem;
+  }
+}
+
+
+.navegacion_derecha {
+    float: right;
+}
+
 
 .navegacion_menu {
     margin: 0;
     list-style: none;
 }
-
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .navegacion_menu {
         width: 280px;
         height: 100%;
         position: fixed;
         margin: 0;
-        padding-top: 60px;
+        padding-top: 4rem;
         top: 0;
         right: -280px;
         bottom: 0;
-        background: #333;
-        box-shadow: 1px 1px 5px #222;
+        background-color: #333;
+        background-color: var(--color-primario);
+        box-shadow: 1px 1px 5px #333;
         -webkit-transition: all 300ms ease;
         -moz-transition: all 300ms ease;
         -ms-transition: all 300ms ease;
         -o-transition: all 300ms ease;
         transition: all 300ms ease;
+        z-index: 99999;
     }
 }
+
 
 .navegacion_item {
     float: left;
     position: relative;
 }
 
-.navegacion_item--activo {
-    background: #DDDDDD;
-}
-
 .navegacion_item a {
     display: block;
-    padding: 2em 1em;
-    color: #DDDDDD;
-    font-size: 1em;
+    padding: 2rem 1rem;
+    color: #DDD;
+    color: var(--color-secundario);
+    font-size: .7em;
     text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navegacion_item--activo {
+    background-color: #DDD;
+    background-color: var(--color-secundario);
 }
 
 .navegacion_item a:hover, .navegacion_item--activo a {
-    color: #333333;
-    background: #DDDDDD;
+    color: #333;
+    color: var(--color-primario);
+    background-color: #DDD;
+    background-color: var(--color-secundario);
 }
-
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .navegacion_item {
         float: none;
         width: 100%;
     }
     .navegacion_item a {
         display: block;
-        padding: 2em;
+        padding: 2rem;
     }
 }
 
-.navegacion_extra {
-    float: left;
-    padding: 1.2em;
-    color: #DDDDDD;
-    font-weight: bold;
-    position: relative;
-}
-
-.navegacion_extra a {
-    display: block;
-    font-size: 1em;
-    color: #FFFFFF;
-    font-weight: bold;
-}
-
-.navegacion_extra i {
-    vertical-align: middle;
-    margin: 0 .5rem;
-}
-
-.navegacion_extra a:hover {
-    color: #777777;
-}
-
-.navegacion_extra .navegacion_item a {
-    font-weight: normal;
-}
-
-@media (max-width: 800px) {
-    .navegacion_extra a {
-        display: block;
-        padding: 0 1em;
-        font-size: 1em;
-        color: #FFFFFF;
-    }
-}
 
 .navegacion_desplegable {
     display: none;
     position: absolute;
     top: 4em;
-    left: -15px;
-    background: #DDD;
-    border: 1px solid #CCC;
+    margin-left: 0;
+    background-color: #DDD;
+    background-color: var(--color-secundario);
     border-top: none;
     width: 200px;
     z-index: 5;
 }
+@media (max-width: 1000px) {
+    .navegacion_desplegable {
+        width: 240px;
+        position: fixed;
+        top: 0;
+        left: auto;
+        bottom: 0;
+        right: 0;
+        box-shadow: 1px 1px 5px #333;
+        box-shadow: 1px 1px 5px var(--color-primario);
+        z-index: 666;
+    }
+}
 
-.navegacion_desplegable > .navegacion_item {
+.navegacion_desplegable .navegacion_item {
     float: left;
     width: 100%;
 }
 
-.navegacion_desplegable > .navegacion_item a {
-    padding: 2em;
-    font-size: 1em;
-    color: #777;
+.navegacion_desplegable .navegacion_item a {
+    padding: 2rem;
+    font-size: .7em;
+    color: #333;
+    color: var(--color-primario);
+    text-decoration: none;
+    border-bottom: none;
 }
 
-.navegacion_desplegable > .navegacion_item a:hover {
-    color: #111;
+.navegacion_desplegable .navegacion_item a:hover {
+    color: #000;
 }
 
 a.navegacion_tiene-desplegable {
@@ -197,8 +167,7 @@ a.navegacion_tiene-desplegable {
     background-origin: content-box;
     background-repeat: no-repeat;
 }
-
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     a.navegacion_tiene-desplegable {
         padding-right: 2.5rem;
         background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='24' height='32' viewBox='0 0 2432'><polygon points='0,0 24,16 0,32' style='fill: rgb%28138, 138, 138%29'></polygon></svg>");
@@ -219,32 +188,59 @@ a.navegacion_tiene-desplegable {
     display: block;
 }
 
-
 .navegacion_tiene-desplegable:focus .navegacion_desplegable .icono_cerrar {
     visibility: visible;
     z-index: 5;
 }
 
 
-@media (max-width: 800px) {
-    .navegacion_desplegable {
-        width: 240px;
-        position: fixed;
-        top: 0;
-        left: auto;
-        bottom: 0;
-        right: 0;
-        box-shadow: 1px 1px 5px #222;
-        z-index: 666;
+.navegacion_extra {
+    float: left;
+    padding: 1.2em;
+    color: #DDD;
+    color: var(--color-secundario);
+    font-weight: bold;
+    position: relative;
+}
+
+.navegacion_extra a {
+    display: block;
+    font-size: 1em;
+    color: #FFF;
+    color: var(--color-texto-invertido);
+    font-weight: bold;
+}
+
+.navegacion_extra i {
+    vertical-align: middle;
+    margin: 0 .5rem;
+}
+
+.navegacion_extra a:hover {
+    color: #FFF;
+    color: var(--color-texto-negativo);
+}
+
+.navegacion_extra .navegacion_item a {
+    font-weight: normal;
+}
+@media (max-width: 1000px) {
+    .navegacion_extra a {
+        display: block;
+        padding: 0 1em;
+        font-size: 1em;
+        color: #FFF;
+        color: var(--color-texto-negativo);
     }
 }
+
 
 .navegacion_conmutador {
     position: absolute;
     clip: rect(0, 0, 0, 0);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .navegacion_conmutador:checked ~ .navegacion_menu {
         right: 0;
     }
@@ -252,10 +248,9 @@ a.navegacion_tiene-desplegable {
 
 label[for="navegacion_conmutador"] {
     display: none;
-    z-index: 1;
+    z-index: 999999;
 }
-
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     label[for="navegacion_conmutador"] {
         display: block;
         position: absolute;
@@ -264,12 +259,22 @@ label[for="navegacion_conmutador"] {
         margin: 0 !important;
         cursor: pointer;
         color: #FFF;
+        color: var(--color-texto-negativo);
         font-size: 2em;
-        font-weight: bolder;
+        font-weight: lighter;
+    }
+
+    label[for="navegacion_conmutador"]:after {
+        content: "+"
+    }
+
+    .navegacion_conmutador:checked ~ label[for="navegacion_conmutador"] {
+        transform: rotate(45deg);
     }
 }
 
-@media (max-width: 800px) {
+
+@media (max-width: 1000px) {
     .navegacion_login {
         display: inline;
         position: absolute;
@@ -280,6 +285,7 @@ label[for="navegacion_conmutador"] {
         padding: 0;
     }
 }
+
 
 .navegacion_asistida {
   border: 0;
