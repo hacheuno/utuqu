@@ -1,60 +1,50 @@
 /*
-*   UTUQU - CUADRICULA
+*  UTUQU - CUADRICULA
+*  La cuadrícula de Utuqu usa la técnica de
+*  elementos flotantes para permitir la división
+*  de espacios verticales y consiste en crear
+*  divisiones horizontales que contienen
+*  subdivisiones verticales a modo de columnas
+*
 *************************************************/
 
 /*
-  ## TODO:
-  * Crear estilos para pantallas extra grandes: 1920 en adelante
+    TODO:
+    Crear estilos para pantallas extra grandes: 1920 en adelante
+    Crear estilos para flex y CSS Grid
 */
 
-/*  Creamos un contenedor horizontal con la anchura máxima deseada */
-.bloque
-{
+/*
+DIVISIONES HORIZONTALES
+*/
+
+/* Creamos un contenedor horizontal con la anchura máxima deseada */
+.fila {
   max-width: 1200px;
   margin: 0 auto;
   clear: both;
 }
 
-/*  Clarificamos las flotaciones */
-.bloque:after
-{
+/* Clarificamos las flotaciones */
+.fila:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/*  No queremos margen en los bloques
-    anidados en otros bloques */
-.bloque .bloque
-{
-  padding: 0;
-}
+/*
+DIVISIONES VERTICALES
+*/
 
-/*  Bueeeno... los que no tengan medianil sí */
-.bloque .bloque.sin-medianil
-{
-  padding: 0 1rem;
-}
-
-/*  ...excepto si está anidado en una columna */
-[class*='peque-'] .bloque.sin-medianil,
-[class*='medio-'] .bloque.sin-medianil,
-[class*='grande-'] .bloque.sin-medianil
-{
-  padding: 0;
-}
-
-/*  Ajustamos las columnas al margen izquierdo */
+/* Ajustamos las columnas al margen izquierdo */
 [class*='peque-'],
 [class*='medio-'],
-[class*='grande-']
-{
+[class*='grande-'] {
   float: left;
   padding: 1rem;
 }
 
-/*  Definimos los tamaños para la vista
-    por debajo de 600px */
+/* Definimos los tamaños para la vista por debajo de 600px */
 .peque-1        { width: 8.33%; }
 .peque-2        { width: 16.66%; }
 .peque-3        { width: 25%; }
@@ -68,17 +58,14 @@
 .peque-11       { width: 91.66%; }
 .peque-12       { width: 100%; }
 
-/*  Hasta 599px las columnas que no especifiquen un tamaño
-    para pantallas pequeñas se apilan una encima de la otra */
+/* Hasta 599px las columnas que no especifiquen un tamaño para pantallas pequeñas se apilan una encima de la otra */
 [class*='medio-'],
-[class*='grande-']
-{
+[class*='grande-'] {
   width: 100%;
 }
 
-/*  Definimos las vistas de 600px hasta 1199px */
-@media only screen and (min-width: 600px)
-{
+/* Definimos las vistas de 600px hasta 1199px */
+@media only screen and (min-width: 600px) {
   .medio-1        { width: 8.33%; }
   .medio-2        { width: 16.66%; }
   .medio-3        { width: 25%; }
@@ -93,9 +80,8 @@
   .medio-12       { width: 100%; }
 }
 
-/*  Definimos las vistas de 1200px en adelante */
-@media only screen and (min-width: 1200px)
-{
+/* Definimos las vistas de 1200px en adelante */
+@media only screen and (min-width: 1200px) {
   .grande-1        { width: 8.33%; }
   .grande-2        { width: 16.66%; }
   .grande-3        { width: 25%; }
@@ -110,71 +96,68 @@
   .grande-12       { width: 100%; }
 }
 
-/*  Creamos una opción para eliminar
-    los espacios entre columnas */
-.sin-medianil > [class*='peque-'],
-.sin-medianil > [class*='medio-'],
-.sin-medianil > [class*='grande-']
-{
-  padding: 0;
-}
+/*
+CUADRÍCULA AUTOMATICA
+*/
 
-/* Cuadrícula automática */
-.bloque-auto
-{
+/* En móviles hace dos columnas */
+.auto-cuadricula .auto-item {
   float: left;
   padding: 1rem;
   width: 50%;
 }
 
-@media (min-width: 600px)
-{
-  .bloque-auto { width: 33.33%; }
+/* En tablets y monitores antiguos tendremos tres */
+@media (min-width: 600px) {
+  .auto-cuadricula .auto-item { width: 33.33%; }
+}
+/* En pantallas grandes tendremos cuatro columnas */
+@media (min-width: 1200px) {
+  .auto-cuadricula .auto-item { width: 25%; }
 }
 
-@media (min-width: 1200px)
-{
-  .bloque-auto { width: 25%; }
+/*
+UTILIDADES
+*/
+
+/* Quitar espacios */
+.sin-medianil > [class*='peque-'],
+.sin-medianil > [class*='medio-'],
+.sin-medianil > [class*='grande-'] {
+  padding: 0;
 }
 
-/*  Utilidad para centrar columnas */
+.fila .fila.sin-medianil {
+  padding: 0 1rem;
+}
+
+[class*='peque-'] .fila.sin-medianil,
+[class*='medio-'] .fila.sin-medianil,
+[class*='grande-'] .fila.sin-medianil {
+  padding: 0;
+}
+
+/* Igualar alturas */
+.alturas-iguales {
+  display: table;
+}
+
+.iguala {
+  float: none;
+  display: table-cell;
+}
+@media (max-width: 600px) {
+  .iguala {
+    float: left;
+    display: block;
+    border: none;
+    padding: 1rem 0;
+  }
+}
+
+/* Centrar columnas */
 .columna-centrada
 {
   float: none;
   margin: 0 auto;
 }
-
-/*  Comentado hasta que sepamos controlarlo
-    en pantallas pequeñas
-.empuja-1                   { left: 8.33%; }
-.empuja-2                   { left: 16.66%; }
-.empuja-3                   { left: 25%; }
-.empuja-4                   { left: 33.33%; }
-.empuja-5                   { left: 41.66%; }
-.empuja-6                   { left: 50%; }
-.empuja-7                   { left: 58.33%; }
-.empuja-8                   { left: 66.66%; }
-.empuja-9                   { left: 75%; }
-.empuja-10                  { left: 83.33%; }
-.empuja-11                  { left: 91.66%; }
-
-[class*='empuja-'] {
-  position: relative;
-}
-
-.estira-1                   { right: 8.33%; }
-.estira-2                   { right: 16.66%; }
-.estira-3                   { right: 25%; }
-.estira-4                   { right: 33.33%; }
-.estira-5                   { right: 41.66%; }
-.estira-6                   { right: 50%; }
-.estira-7                   { right: 58.33%; }
-.estira-8                   { right: 66.66%; }
-.estira-9                   { right: 75%; }
-.estira-10                  { right: 83.33%; }
-.estira-11                  { right: 91.66%; }
-
-[class*='estira-'] {
-  position: relative;
-}
-*/
