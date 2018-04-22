@@ -27,45 +27,32 @@
 .fijado                     { position: fixed; }
 .centrado                   { margin: 0 auto; }
 
+
+/* Color */
+.apagado                    { opacity: .5 }
+.color-heredado             { color: inherit }
+
 /* Texto */
 .texto-centrado             { text-align: center; }
 .texto-izquierda            { text-align: left; }
 .texto-derecha              { text-align: right; }
 .texto-justificado          { text-align: justify; }
-
 .texto-subrayado            { text-decoration: underline; }
 .texto-mayuscula            { text-transform: uppercase; }
-
 .texto-gordo                { font-weight: bolder; }
 .texto-fino                 { font-weight: lighter; }
 .texto-normal               { font-weight: normal; }
-
 .texto-cursiva              { font-family: cursive; }
-/*
-  ## TODO:
-  * Decidir si definimos fuentes en las clases siguientes:
-*/
 .texto-mono                 { font-family: monospace; }
 .texto-sin-serifa           { font-family: sans-serif; }
-.texto-serifa               { font-family: serif; }
-
-.texto-grande
-{
-  font-size: 120%;
-}
-
-.texto-peque {
-  font-size: 90%;
-}
-
-.texto-destacado
-{
+.texto-con-serifa           { font-family: serif; }
+.texto-grande               { font-size: 120%; }
+.texto-peque                { font-size: 90%; }
+.texto-destacado {
   font-size: 120%;
   font-weight: lighter;
 }
-
-.texto-leyenda
-{
+.texto-secundario {
   font-size: .9rem;
   font-style: italic;
   color: #777777;
@@ -90,10 +77,6 @@
 .texto-fucsia               { color: #F012BE }
 .texto-morado               { color: #B10DC9 }
 .texto-granate              { color: #85144B }
-
-/* Color */
-.apagado                    { opacity: .5 }
-.color-heredado             { color: inherit }
 
 /* Fondos */
 .fondo-negro                { background-color: #111111 }
@@ -250,30 +233,30 @@
 .margen--vertical-3         { margin: 3rem 0 }
 .margen--vertical-4         { margin: 4rem 0 }
 
-.margen--horizontal-1       { margin: 1rem 0 }
-.margen--horizontal-2       { margin: 2rem 0 }
-.margen--horizontal-3       { margin: 3rem 0 }
-.margen--horizontal-4       { margin: 4rem 0 }
+.margen--horizontal-1       { margin:  0 1rem }
+.margen--horizontal-2       { margin:  0 2rem }
+.margen--horizontal-3       { margin:  0 3rem }
+.margen--horizontal-4       { margin:  0 4rem }
 
 .margen--arriba-1           { margin-top: 1rem }
 .margen--arriba-2           { margin-top: 2rem }
 .margen--arriba-3           { margin-top: 3rem }
 .margen--arriba-4           { margin-top: 4rem }
 
-.margen--abajo-1            { margin-top: 1rem }
-.margen--abajo-2            { margin-top: 2rem }
-.margen--abajo-3            { margin-top: 3rem }
-.margen--abajo-4            { margin-top: 4rem }
+.margen--abajo-1            { margin-bottom: 1rem }
+.margen--abajo-2            { margin-bottom: 2rem }
+.margen--abajo-3            { margin-bottom: 3rem }
+.margen--abajo-4            { margin-bottom: 4rem }
 
-.margen--izquierdo-1        { margin-top: 1rem }
-.margen--izquierdo-2        { margin-top: 2rem }
-.margen--izquierdo-3        { margin-top: 3rem }
-.margen--izquierdo-4        { margin-top: 4rem }
+.margen--izquierdo-1        { margin-left: 1rem }
+.margen--izquierdo-2        { margin-left: 2rem }
+.margen--izquierdo-3        { margin-left: 3rem }
+.margen--izquierdo-4        { margin-left: 4rem }
 
-.margen--derecho-1          { margin-top: 1rem }
-.margen--derecho-2          { margin-top: 2rem }
-.margen--derecho-3          { margin-top: 3rem }
-.margen--derecho-4          { margin-top: 4rem }
+.margen--derecho-1          { margin-right: 1rem }
+.margen--derecho-2          { margin-right: 2rem }
+.margen--derecho-3          { margin-right: 3rem }
+.margen--derecho-4          { margin-right: 4rem }
 
 .sin-margen                 { margin: 0 }
 .sin-margen--arriba         { margin-top: 0 }
@@ -335,22 +318,3 @@
 .imagen-fondo--derecha      { background-position: right }
 .imagen-fondo--abajo        { background-position: bottom }
 .imagen-fondo--izquierda    { background-position: left }
-
-/* Alturas iguales */
-.alturas-iguales {
-  display: table;
-}
-
-.iguala {
-  float: none;
-  display: table-cell;
-}
-
-@media (max-width: 600px) {
-  .iguala {
-    float: left;
-    display: block;
-    border: none;
-    padding: 1rem 0;
-  }
-}
