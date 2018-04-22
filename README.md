@@ -1,6 +1,8 @@
 UTUQU
 -----
-Utuqu es una librería CSS para desarrollo web, gratuita y libre bajo licencia HSÑ (Haz lo que te salga de la ñocla). La idea detras de Utuqu sigue la metodología CPPM (Currar Poco Procratinar Mucho) para que tu jefe o tus clientes te dejen dedicarte a lo realmente importante.
+Utuqu es una librería CSS para desarrollo web, gratuita y libre bajo licencia HSÑ (Haz lo que te salga de la ñocla)
+
+La idea detras de Utuqu sigue la metodología CPPM (Currar Poco Procratinar Mucho) para que tu jefe o tus clientes te dejen dedicarte a lo realmente importante.
 
 Esta librería parte de algunos prejuicios fuertemente enraizados en nuestras vidas de desarrolladores web:
 
