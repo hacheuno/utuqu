@@ -1,31 +1,29 @@
 UTUQU
 -----
-Utuqu es una librería CSS para desarrollo web, gratuita y libre bajo licencia HSÑ (Haz lo que te Salga de la Ñocla)
+Utuqu es una librería CSS para desarrollo web, gratuita y libre bajo licencia Haz lo que te Salga de la Ñocla.
 
-La idea detras de Utuqu sigue la metodología CPPM (Currar Poco Procratinar Mucho) para que tu jefe o tus clientes te dejen dedicarte a lo realmente importante.
+Este proyecto se basa en la filosofía _Procrastinate-First_ con el objetivo de aprovechar esa semana que le dí de plazo a mi jefe para dedicarme a lo que realmente me gusta... hacer proyectos como este.
 
-Esta librería parte de algunos prejuicios fuertemente enraizados en nuestras vidas de desarrolladores web:
+Esta librería parte de algunos prejuicios fuertemente enraizados en mi vida como desarrollador web:
 
-  * Solo usamos clases, para reducir la aparición de _poblemas_ de especificidad. ID = poblemas
+  * Solo uso clases, para reducir la aparición de _poblemas_ de especificidad. ID = poblemas
   * Documentación en la propia hoja de estilos, a menudo de forma incompleta o inutil
-  * Los enlaces los subrallamos para que parezcan enlaces. Toma, castaña
-  * Estamos un poquito saturaditos de tanto freimuorc de JavaScript. Hoy no juegas ECMA
+  * Los enlaces los subrallo para que parezcan enlaces. Toma, castaña
+  * Estoy un poquito saturadito de tanto freimgüorc JavaScript... hoy no juegas ECMA
   * Solo viene con las las patatas, el bonito lo pones tú
 
 ### Características
 Desengañate, esa web tan chula que has diseñado solo la veran tu cliente, su pareja y la tuya. El resto de los mortales verán un _churro pabajo_ en las pantallas de sus móviles. Utuqu genera ese _churro pabajo_ de forma automática permitiendote, pequeño padawai, pasarte el desarrollo mobile-first y toda esa mandanga por el arco del triunfo. A procrastinar se ha dicho.
 
-Otra de sus características es que tanto la documentación como las clases que lo componen están escritas en casteplano, la segunda lengua más hablada del mundo mundial. Y no es que nos importe mucho pero con tal de bajarles los humos a los angloparlantes, lo que sea oiga. Utuqu facilita el trabajo y el aprendizaje a aquellas personas hispano-parlantes que prefieren usar su lengua materna para picar código, y luchar así contra la colonización cultural de los descendientes de la pérfida albión.
+Las clases en Utuqu están escritas en casteplano, la segunda lengua más hablada del mundo mundial. Y no es que nos importe mucho, pero con tal de bajarles los humos a los descendientes de la pérfida albión, lo que sea oiga. Y de paso cultivamos esa tan castiza costumbre de pensar lo justo.
 
-Utuqu está escrita adaptando filosofias como BEM, para minimizar la aparición episodios del tipo EstoQueLechesHaceAqui o PaQueNaricesServiraEsto.
-
-Para ganar tiempo de procrastinación, Utuqu está construido sin preprocesadores, herramientas de linea de comandos ni otras tencnologias que te mantienen la mitad del tiempo leyendo manuales e instalando paquetitos y la otra mitad averiguando porque a tí no te funciona.
+Para ganar tiempo procrastinable, Utuqu está construido sin pre-procesadores, herramientas de linea de comandos u otras chuminadas jipster que te mantienen la mitad del tiempo leyendo manuales e instalando paquetitos y la otra mitad averiguando porque a tí no te funciona. Copipaste del de toda la vida oiga.
 
 Como Utuqu ha acabado teniendo muchos archivos ha habido que meterlos en carpetas porque si no era un lio tremendo:
 
  * __Base:__ contiene las características básicas; ajustes globales, cuadrícula, estilos básicos de texto, formularios y una biblioteca de utilidades.
 
- * __Componentes:__ aquí se encuentran componentes con funcionalidades completas, como los menús, la barra superior, las pestñas o los desplegables.
+ * __Componentes:__ aquí se encuentran componentes con funcionalidades completas, como los menús, la barra superior, las pestañas o los desplegables.
 
  * __Módulos:__ está carpeta está vacia por defecto, para que guardes las plantillicas que te vayas haciendo.
 
